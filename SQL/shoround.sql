@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2020 at 06:07 AM
+-- Generation Time: Dec 01, 2020 at 03:11 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -24,14 +24,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `friends`
+-- Table structure for table `bookings`
 --
 
-CREATE TABLE `friends` (
+CREATE TABLE `bookings` (
   `id` int(10) UNSIGNED NOT NULL,
-  `user_one` int(11) NOT NULL,
-  `user_two` int(11) NOT NULL
+  `userid` int(11) NOT NULL,
+  `guideid` int(11) NOT NULL,
+  `charges` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `userid`, `guideid`, `charges`) VALUES
+(6, 4, 7, 0),
+(7, 4, 7, 0);
 
 -- --------------------------------------------------------
 
@@ -42,16 +51,10 @@ CREATE TABLE `friends` (
 CREATE TABLE `friend_request` (
   `id` int(11) NOT NULL,
   `sender` int(11) NOT NULL,
-  `receiver` int(11) NOT NULL
+  `receiver` int(11) NOT NULL,
+  `charge` int(11) DEFAULT NULL,
+  `date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `friend_request`
---
-
-INSERT INTO `friend_request` (`id`, `sender`, `receiver`) VALUES
-(7, 6, 7),
-(8, 6, 9);
 
 -- --------------------------------------------------------
 
@@ -60,7 +63,7 @@ INSERT INTO `friend_request` (`id`, `sender`, `receiver`) VALUES
 --
 
 CREATE TABLE `guide` (
-  `id` int(11) NOT NULL,
+  `guideid` int(11) NOT NULL,
   `guidename` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `guide_email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `guide_password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -75,7 +78,7 @@ CREATE TABLE `guide` (
 -- Dumping data for table `guide`
 --
 
-INSERT INTO `guide` (`id`, `guidename`, `guide_email`, `guide_password`, `gender`, `city`, `contact`, `bio`, `guide_image`) VALUES
+INSERT INTO `guide` (`guideid`, `guidename`, `guide_email`, `guide_password`, `gender`, `city`, `contact`, `bio`, `guide_image`) VALUES
 (7, 'Harry Potter', 'harry@hogwarts.com', '$2y$10$9bNpSmVpUSMkp1ymeevRQe5lWxjshsKxJzn2YyDsyaOou4NeuVKJW', 'Male', 'Delhi', '1234123400', 'Avadacadabra', '12.png'),
 (8, 'Ron Weasley', 'ron@hogwarts.com', '$2y$10$eNp4h5TS2nWjvdE2X8v5tuv1HU8JGYpTpHG5osgIl6W8YY91loI92', 'Male', 'Bangalore', '1234123401', 'Alohomora', '8.png'),
 (9, 'Hermoine Granger', 'hermoine@hogwarts.com', '$2y$10$a9clMoUbvbIryc/sCwkAPuS.wtfDKCoSSenAHOwjPC.5MqbAhYnie', 'Female', 'Goa', '1234123402', 'Expectopatronum', '7.png');
@@ -87,7 +90,7 @@ INSERT INTO `guide` (`id`, `guidename`, `guide_email`, `guide_password`, `gender
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
   `username` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -102,7 +105,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `user_email`, `user_password`, `gender`, `city`, `contact`, `bio`, `user_image`) VALUES
+INSERT INTO `users` (`userid`, `username`, `user_email`, `user_password`, `gender`, `city`, `contact`, `bio`, `user_image`) VALUES
 (4, 'Severous Snape', 'snape@hogwarts.com', '$2y$10$4FuU.8EfNSK63.1roGXcXOJoDNYq1MwQrWe3q8351Yj.nMOYo34pe', 'Male', 'Delhi', '1234123400', 'Obliviate', '11.png'),
 (5, 'Sirius Black', 'black@hogwarts.com', '$2y$10$cR0Te1RpxUMMPXPOvFTML.4kxtzbrZgh.VIl46M9K09Ki4m621UiW', 'Male', 'Bangalore', '1234123401', 'Expelliarmus', '3.png'),
 (6, 'Albus Dumbeldore', 'albus@hogwarts.com', '$2y$10$fTBAtVzKrUk/loip4ako3.wKoAdIPTpF8lvo9AOH8cqal5.l0SMnS', 'Male', 'Goa', '1234123402', 'Lumos', '3.png');
@@ -112,12 +115,12 @@ INSERT INTO `users` (`id`, `username`, `user_email`, `user_password`, `gender`, 
 --
 
 --
--- Indexes for table `friends`
+-- Indexes for table `bookings`
 --
-ALTER TABLE `friends`
+ALTER TABLE `bookings`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `user_one` (`user_one`),
-  ADD KEY `user_two` (`user_two`);
+  ADD KEY `userid` (`userid`),
+  ADD KEY `guideid` (`guideid`);
 
 --
 -- Indexes for table `friend_request`
@@ -131,14 +134,14 @@ ALTER TABLE `friend_request`
 -- Indexes for table `guide`
 --
 ALTER TABLE `guide`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`guideid`),
   ADD UNIQUE KEY `guide_email` (`guide_email`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`userid`),
   ADD UNIQUE KEY `user_email` (`user_email`);
 
 --
@@ -146,39 +149,39 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `friends`
+-- AUTO_INCREMENT for table `bookings`
 --
-ALTER TABLE `friends`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `bookings`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `friend_request`
 --
 ALTER TABLE `friend_request`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `guide`
 --
 ALTER TABLE `guide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `guideid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `friends`
+-- Constraints for table `friend_request`
 --
-ALTER TABLE `friends`
-  ADD CONSTRAINT `friends_ibfk_1` FOREIGN KEY (`user_one`) REFERENCES `users` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `friends_ibfk_2` FOREIGN KEY (`user_two`) REFERENCES `guide` (`id`) ON DELETE CASCADE;
+ALTER TABLE `friend_request`
+  ADD CONSTRAINT `request_ibfk_1` FOREIGN KEY (`sender`) REFERENCES `users` (`userid`) ON DELETE CASCADE,
+  ADD CONSTRAINT `request_ibfk_2` FOREIGN KEY (`receiver`) REFERENCES `guide` (`guideid`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -10,7 +10,7 @@ class Friend{
     // CHECK IF ALREADY FRIENDS
     public function is_already_friends($my_id, $user_id){
         try{
-            $sql = "SELECT * FROM `friends` WHERE (user_one = :my_id AND user_two = :frnd_id) OR (user_one = :frnd_id AND user_two = :my_id)";
+            $sql = "SELECT * FROM `bookings` WHERE (userid = :my_id AND guideid = :frnd_id) OR (userid = :frnd_id AND guideid = :my_id)";
 
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':my_id',$my_id, PDO::PARAM_INT);
@@ -93,7 +93,7 @@ class Friend{
 
     }
 
-    // MAKE PENDING FRIENDS (SEND FRIEND REQUEST)
+    //SEND FRIEND REQUEST
     public function make_pending_friends($my_id, $guide_id){
         
         try{
@@ -118,7 +118,7 @@ class Friend{
             $stmt->bindValue(':my_id',$my_id, PDO::PARAM_INT);
             $stmt->bindValue(':frnd_id', $user_id, PDO::PARAM_INT);
             $stmt->execute();
-            header('Location: guideprofile.php');
+            header('Location: guide_profile.php?id='.$user_id);
             exit;
         }
         catch (PDOException $e) {
@@ -139,10 +139,10 @@ class Friend{
             $delete_stmt->execute();
             if($delete_stmt->execute()){
 
-                $sql = "INSERT INTO `friends`(user_one, user_two) VALUES(?, ?)";
+                $sql = "INSERT INTO `bookings`(userid, guideid) VALUES(?, ?)";
                 $stmt = $this->db->prepare($sql);
-                $stmt->execute([$my_id, $user_id]);
-                header('Location: guideprofile.php');
+                $stmt->execute([$user_id, $my_id]);
+                header('Location: guide_profile.php?id='.$user_id);
                 exit;
                 
             }            
@@ -152,26 +152,11 @@ class Friend{
         }
 
     }
-    // DELETE FRIENDS 
-    public function delete_friends($my_id, $user_id){
-        try{
-            $delete_friends = "DELETE FROM `friends` WHERE (user_one = :my_id AND user_two = :frnd_id) OR (user_one = :frnd_id AND user_two = :my_id)";
-            $delete_stmt = $this->db->prepare($delete_friends);
-            $delete_stmt->bindValue(':my_id',$my_id, PDO::PARAM_INT);
-            $delete_stmt->bindValue(':frnd_id', $user_id, PDO::PARAM_INT);
-            $delete_stmt->execute();
-            header('Location: user_profile.php?id='.$user_id);
-            exit;
-        }
-        catch (PDOException $e) {
-            die($e->getMessage());
-        }
-    }
 
     // REQUEST NOTIFICATIONS
     public function request_notification($my_id, $send_data){
         try{
-            $sql = "SELECT sender, username, user_image FROM `friend_request` JOIN users ON friend_request.sender = users.id WHERE receiver = ?";
+            $sql = "SELECT sender, userid, username, user_image, charge FROM `friend_request` JOIN users ON friend_request.sender = users.userid WHERE receiver = ?";
 
             $stmt = $this->db->prepare($sql);
             $stmt->execute([$my_id]);
@@ -190,9 +175,9 @@ class Friend{
     }
 
 
-    public function get_all_friends($my_id, $send_data){
+    public function get_all_bookings($my_id, $send_data){
         try{
-            $sql = "SELECT * FROM `friends` WHERE user_one = :my_id OR user_two = :my_id";
+            $sql = "SELECT * FROM `bookings` WHERE userid = :my_id OR guideid = :my_id";
             $stmt = $this->db->prepare($sql);
             $stmt->bindValue(':my_id',$my_id, PDO::PARAM_INT);
             $stmt->execute();
@@ -203,22 +188,54 @@ class Friend{
                     $all_users = $stmt->fetchAll(PDO::FETCH_OBJ);
 
                     foreach($all_users as $row){
-                        if($row->user_one == $my_id){
-                            $get_user = "SELECT id, username, user_image FROM `users` WHERE id = ?";
+                        if($row->userid == $my_id){
+                            $get_user= "SELECT * FROM `guide` WHERE guideid = ?";
                             $get_user_stmt = $this->db->prepare($get_user);
-                            $get_user_stmt->execute([$row->user_two]);
+                            $get_user_stmt->execute([$row->guideid]);
                             array_push($return_data, $get_user_stmt->fetch(PDO::FETCH_OBJ));
                         }else{
-                            $get_user = "SELECT id, username, user_image FROM `users` WHERE id = ?";
+                            $get_user = "SELECT * FROM `users` WHERE userid = ?";
                             $get_user_stmt = $this->db->prepare($get_user);
-                            $get_user_stmt->execute([$row->user_one]);
+                            $get_user_stmt->execute([$row->userid]);
                             array_push($return_data, $get_user_stmt->fetch(PDO::FETCH_OBJ));
                         }
                     }
 
                     return $return_data;
-
+                    echo $return_data;
+                    
                 }
+                else{
+                    return $stmt->rowCount();
+                }
+        }
+        catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function get_all_users($my_id, $send_data){
+        try{
+            $sql = "SELECT * FROM `bookings` WHERE userid = :my_id";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindValue(':my_id',$my_id, PDO::PARAM_INT);
+            $stmt->execute();
+
+                if($send_data){
+
+                    $return_data = [];
+                    $all_users = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+                    foreach($all_users as $row){
+                            $get_user = "SELECT userid, username, user_image FROM `users` WHERE userid = ?";
+                            $get_user_stmt = $this->db->prepare($get_user);
+                            $get_user_stmt->execute([$row->guideid]);
+                            array_push($return_data, $get_user_stmt->fetch(PDO::FETCH_OBJ));
+                            return $return_data;
+                        }
+                    }
+                    
+                
                 else{
                     return $stmt->rowCount();
                 }

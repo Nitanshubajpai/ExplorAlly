@@ -21,20 +21,10 @@ if(isset($_GET['action']) && isset($_GET['id'])){
 
             // IF GET SEND REQUEST ACTION
             if($_GET['action'] == 'send_req'){
+                $frnd_obj->make_pending_friends($my_id, $guide_id);
                 // CHECK IS REQUEST ALREADY SENT OR NOT
                 // is_request_already_sent() FUNCTION RETURN TRUE OR FLASE
-                if($frnd_obj->is_request_already_sent($my_id, $guide_id)){
-                    redirect_to_profile();
-                }
-                // CHECK IF THIS ID IS ALREADY IN MY FRIENDS LIST.
-                // THIS FUNCTION ALSO RETURN TRUE OR FLASE 
-                elseif($frnd_obj->is_already_friends($my_id, $guide_id)){
-                    redirect_to_profile();
-                }
-                // OTHERWISE MAKE FRIEND REQUEST
-                else{
-                    $frnd_obj->make_pending_friends($my_id, $guide_id);
-                }
+                
             }
             else{
                 redirect_to_profile();

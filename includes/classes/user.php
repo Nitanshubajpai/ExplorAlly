@@ -85,7 +85,7 @@ class User{
                 $match_pass = password_verify($this->user_pass, $row['user_password']);
                 if($match_pass){
                     $_SESSION = [
-                        'user_id' => $row['id'],
+                        'user_id' => $row['userid'],
                         'email' => $row['user_email']
                     ];
                     header('Location: userprofile.php');
@@ -109,7 +109,7 @@ class User{
     // FIND USER BY ID
     function find_user_by_id($id){
         try{
-            $find_user = $this->db->prepare("SELECT * FROM `users` WHERE id = ?");
+            $find_user = $this->db->prepare("SELECT * FROM `users` WHERE userid = ?");
             $find_user->execute([$id]);
             if($find_user->rowCount() === 1){
                 return $find_user->fetch(PDO::FETCH_OBJ);
@@ -123,21 +123,5 @@ class User{
         }
     }
     
-    // FETCH ALL USERS WHERE ID IS NOT EQUAL TO MY ID
-    function all_users($id){
-        try{
-            $get_users = $this->db->prepare("SELECT id, username, user_image FROM `users` WHERE id != ?");
-            $get_users->execute([$id]);
-            if($get_users->rowCount() > 0){
-                return $get_users->fetchAll(PDO::FETCH_OBJ);
-            }
-            else{
-                return false;
-            }
-        }
-        catch (PDOException $e) {
-            die($e->getMessage());
-        }
-    }
 }
 ?>

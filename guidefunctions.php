@@ -26,12 +26,9 @@ if(isset($_GET['action']) && isset($_GET['id'])){
             // IF GET ACCEPT REQUEST ACTION
             elseif($_GET['action'] == 'accept_req'){
 
-                if($frnd_obj->is_already_friends($my_id, $user_id)){
-                    redirect_to_profile();
-                }
-                else{
+            
                     $frnd_obj->make_friends($my_id, $user_id);
-                }
+                
             }
             else{
                 redirect_to_profile();

@@ -17,7 +17,7 @@ else{
 // REQUEST NOTIFICATION NUMBER
 $get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
 // TOTAL FRIENDS
-$get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
+$get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,12 +41,8 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
         <nav>
             <ul>
                 <li><a href="userprofile.php" rel="noopener noreferrer" class="active">Home</a></li>
-                <li><a href="notifications.php" rel="noopener noreferrer">Requests<span class="badge <?php
-                if($get_req_num > 0){
-                    echo 'redBadge';
-                }
-                ?>"><?php echo $get_req_num;?></span></a></li>
-                <li><a href="friends.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
+                
+                <li><a href="userbookings.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
                 <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
             </ul>
         </nav>
@@ -81,7 +77,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                                 echo '<div class="user_box">
                                         <div class="user_img"><img src="profile_images/'.$row->guide_image.'" alt="Profile image"></div>
                                         <div class="user_info"><span>'.$row->guidename.'</span><span style="font-size:14px;">'.$row->city.'</span>
-                                        <span><a href="user_profile.php?id='.$row->id.'" class="see_profileBtn">See profile</a></div>
+                                        <span><a href="user_profile.php?id='.$row->guideid.'" class="see_profileBtn">See profile</a></div>
                                     </div>';
                             }
                         }
@@ -97,7 +93,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                                     echo '<div class="user_box">
                                             <div class="user_img"><img src="profile_images/'.$row->guide_image.'" alt="Profile image"></div>
                                             <div class="user_info"><span>'.$row->guidename.'</span><span style="font-size:14px;">'.$row->city.'</span>
-                                            <span><a href="user_profile.php?id='.$row->id.'" class="see_profileBtn">See profile</a></div>
+                                            <span><a href="user_profile.php?id='.$row->guideid.'" class="see_profileBtn">See profile</a></div>
                                         </div>';
                                 }
                             }
@@ -114,7 +110,7 @@ $get_frnd_num = $frnd_obj->get_all_friends($_SESSION['user_id'], false);
                             echo '<div class="user_box">
                                     <div class="user_img"><img src="profile_images/'.$row->guide_image.'" alt="Profile image"></div>
                                     <div class="user_info"><span>'.$row->guidename.'</span><span style="font-size:14px;">'.$row->city.'</span>
-                                    <span><a href="user_profile.php?id='.$row->id.'" class="see_profileBtn">See profile</a></div>
+                                    <span><a href="user_profile.php?id='.$row->guideid.'" class="see_profileBtn">See profile</a></div>
                                 </div>';
                         }
                     }

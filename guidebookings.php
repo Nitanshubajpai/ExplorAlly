@@ -14,9 +14,11 @@ else{
 }
 // TOTAL REQUESTS
 $get_req_num = $frnd_obj->request_notification($_SESSION['guide_id'], false);
-// TOTAL FRIENDS
+// TOTLA FRIENDS
 $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['guide_id'], false);
-$get_all_req_sender = $frnd_obj->request_notification($_SESSION['guide_id'], true);
+// GET MY($_SESSION['user_id']) ALL FRIENDS
+$get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,32 +41,37 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['guide_id'], tru
         </div>
         <nav>
             <ul>
-                <li><a href="guideprofile.php" rel="noopener noreferrer" class="active">Requests<span class="badge <?php
+                <li><a href="guideprofile.php" rel="noopener noreferrer">Requests<span class="badge <?php
                 if($get_req_num > 0){
                     echo 'redBadge';
                 }
                 ?>"><?php echo $get_req_num;?></span></a></li>
-                <li><a href="guidebookings.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
+                <li><a href="guidebookings.php" rel="noopener noreferrer" class="active">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
                 <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
             </ul>
         </nav>
         <div class="all_users">
-            <h3>All request senders</h3>
-            <div class="userWrapper">
+            <h3>Bookings</h3>
+            <div class="usersWrapper">
                 <?php
-                if($get_req_num > 0){
-                    foreach($get_all_req_sender as $row){
+                if($get_frnd_num > 0){
+                    foreach($get_all_friends as $row){
                         echo '<div class="user_box">
                                 <div class="user_img"><img src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
                                 <div class="user_info"><span>'.$row->username.'</span>
-                                <span><a href="guide_profile.php?id='.$row->userid.'" class="see_profileBtn">See profile</a></div>
+                                <span>'.$row->city.'</span>
+                                <span> DATE: </span>
+                                <span> CHARGE: </span></div>
                             </div>';
                     }
                 }
                 else{
-                    echo '<h4>You have no friend requests!</h4>';
+                    echo '<h4>You have no friends!</h4>';
                 }
                 ?>
+
+            
+
             </div>
         </div>
     </div>

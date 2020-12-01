@@ -84,7 +84,7 @@ class guide{
                 $match_pass = password_verify($this->guide_pass, $row['guide_password']);
                 if($match_pass){
                     $_SESSION = [
-                        'guide_id' => $row['id'],
+                        'guide_id' => $row['guideid'],
                         'email' => $row['guide_email']
                     ];
                     header('Location: guideprofile.php');
@@ -108,7 +108,7 @@ class guide{
     // FIND guide BY ID
     function find_guide_by_id($id){
         try{
-            $find_guide = $this->db->prepare("SELECT * FROM `guide` WHERE id = ?");
+            $find_guide = $this->db->prepare("SELECT * FROM `guide` WHERE guideid = ?");
             $find_guide->execute([$id]);
             if($find_guide->rowCount() === 1){
                 return $find_guide->fetch(PDO::FETCH_OBJ);
@@ -138,6 +138,8 @@ class guide{
             die($e->getMessage());
         }
     }
+
+    // FETCH GUIDE by CITY
     function guide_by_city($city){
         try{
             $get_guide_city = $this->db->prepare("SELECT * FROM `guide` where city = ?");

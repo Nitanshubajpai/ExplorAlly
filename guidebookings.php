@@ -57,16 +57,16 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
                 if($get_frnd_num > 0){
                     foreach($get_all_friends as $row){
                         echo '<div class="user_box">
-                                <div class="user_img"><img src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
-                                <div class="user_info"><span>'.$row->username.'</span>
-                                <span>'.$row->city.'</span>
-                                <span> DATE: </span>
-                                <span> CHARGE: </span></div>
+                                <div class="user_img"><img src="profile_images/'.$row[0]->user_image.'" alt="Profile image"></div>
+                                <div class="user_info"><span>'.$row[0]->username.'</span>
+                                <span>'.$row[0]->city.'</span>
+                                <span> CHARGE:'.$row[1].' </span>
+                                <span> DATE: '.$row[2].'</span></div>
                             </div>';
                     }
                 }
                 else{
-                    echo '<h4>You have no friends!</h4>';
+                    echo '<h4>You have no Bookings!</h4>';
                 }
                 ?>
 

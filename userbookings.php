@@ -41,12 +41,8 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
         </div>
         <nav>
             <ul>
-                <li><a href="userprofile.php" rel="noopener noreferrer">Home<span class="badge <?php
-                if($get_req_num > 0){
-                    echo 'redBadge';
-                }
-                ?>"><?php echo $get_req_num;?></span></a></li>
-                <li><a href="userbookings.php" rel="noopener noreferrer" class="active">Friends<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
+                <li><a href="userprofile.php" rel="noopener noreferrer">Home</a></li>
+                <li><a href="userbookings.php" rel="noopener noreferrer"  class="active">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
                 <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
             </ul>
         </nav>
@@ -57,17 +53,16 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
                 if($get_frnd_num > 0){
                     foreach($get_all_friends as $row){
                         echo '<div class="user_box">
-                                <div class="user_img"><img src="profile_images/'.$row->guide_image.'" alt="Profile image"></div>
-                                <div class="user_info"><span>'.$row->guidename.'</span>
-                                <div class="user_info"><span>'.$row->city.'</span>
-                                <div class="user_info"><span>'.$row->gender.'</span>
-                                
-                                
+                                <div class="user_img"><img src="profile_images/'.$row[0]->guide_image.'" alt="Profile image"></div>
+                                <div class="user_info"><span>'.$row[0]->guidename.'</span>
+                                <span>'.$row[0]->city.'</span>
+                                <span> CHARGE:'.$row[1].' </span>
+                                <span> DATE: '.$row[2].'</span></div>
                             </div>';
                     }
                 }
                 else{
-                    echo '<h4>You have no friends!</h4>';
+                    echo '<h4>You have no Bookings!</h4>';
                 }
                 ?>
 

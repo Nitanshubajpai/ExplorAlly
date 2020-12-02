@@ -37,8 +37,8 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
         <div class="inner_profile">
         <nav>
             <ul>
-                <li><a href="userprofile.php" rel="noopener noreferrer">Home</a></li>
-                <li><a href="friends.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
+                <li><a href="userprofile.php" rel="noopener noreferrer" class="active">Home</a></li>
+                <li><a href="userbookings.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
                 <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
             </ul>
         </nav>
@@ -55,25 +55,26 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
             <?//charges: ?>
             <form action="" method="POST">
                     <label for="date">Date:</label>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                     <label for="hour">Hours: </label>
-                    <input type="number" name="hour" id="hour">
+                    <input type="number" name="hour" id="hour" required>
                     <input type="submit" value = "Checkprice">
-                </form>
-                <?php
-                if(isset($_POST['hour'])) {
-                    $charge = $_POST['hour']*60*2;
-                    echo 'Charges: <h1>'.$charge.'</h1>';
-                }
-                ?>
+            </form>
+            
             <div class="actions">
                 <?php
-                
                 if($check_req_sender){
                     echo '<a href="userfunctions.php?action=cancel_req&id='.$guide_data->guideid.'" class="req_actionBtn cancleRequest">Cancel Request</a>';
                 }
-                else{
-                    echo '<a href="userfunctions.php?action=send_req&id='.$guide_data->guideid.'" class="req_actionBtn sendRequest">Send Request</a>';
+                 elseif(isset($_POST['hour']) && isset($_POST['date'])) {
+                    $charge = $_POST['hour']*60*2;
+                    $date = $_POST['date'];
+                    echo 'Charges: <h1>'.$charge.'</h1>';
+                
+                    
+                        echo '<a href="userfunctions.php?action=send_req&id='.$guide_data->guideid.'&charge='.$charge.'&date='.$date.'
+                        " class="req_actionBtn sendRequest">Send Request</a>';
+                    
                 }
                 ?>
                 

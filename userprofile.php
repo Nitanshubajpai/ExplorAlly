@@ -41,7 +41,6 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
         <nav>
             <ul>
                 <li><a href="userprofile.php" rel="noopener noreferrer" class="active">Home</a></li>
-                
                 <li><a href="userbookings.php" rel="noopener noreferrer">Bookings<span class="badge"><?php echo $get_frnd_num;?></span></a></li>
                 <li><a href="logout.php" rel="noopener noreferrer">Logout</a></li>
             </ul>

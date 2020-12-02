@@ -57,6 +57,8 @@ $get_all_req_sender = $frnd_obj->request_notification($_SESSION['guide_id'], tru
                         echo '<div class="user_box">
                                 <div class="user_img"><img src="profile_images/'.$row->user_image.'" alt="Profile image"></div>
                                 <div class="user_info"><span>'.$row->username.'</span>
+                                <span>Charge: '.$row->charge.'</span>
+                                <span>Date: '.$row->date.'</span>
                                 <span><a href="guide_profile.php?id='.$row->userid.'" class="see_profileBtn">See profile</a></div>
                             </div>';
                     }

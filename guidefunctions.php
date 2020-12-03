@@ -43,3 +43,4 @@ if(isset($_GET['action']) && isset($_GET['id'])){
 else{
     redirect_to_profile();
 }
+?>

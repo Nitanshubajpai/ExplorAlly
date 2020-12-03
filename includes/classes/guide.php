@@ -36,7 +36,12 @@ class guide{
                     }
                     else{
                         
-                        $guide_image = rand(1,12);
+                        if($this->gender == 'Female'){
+                            $guide_image = rand(1,17);
+                        }
+                        else{
+                            $guide_image = rand(18,36);
+                        }
 
                         $this->hash_pass = password_hash($this->guide_pass, PASSWORD_DEFAULT);
                         $sql = "INSERT INTO `guide` (guidename, guide_email, guide_password, guide_image, gender, city, contact, bio) VALUES(:guidename, :guide_email, :guide_pass, :guide_image, :gender, :city, :contact, :bio)";

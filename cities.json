@@ -1,0 +1,55 @@
+{
+    "cities": [
+        {
+        "id": 0,
+        "city": "Mumbai",
+        "images": ["images/Mumbai/1.jpg", "images/Mumbai/2.jpg", "images/Mumbai/3.jpg", "images/Mumbai/4.jpg", "images/Mumbai/5.jpg"],
+        "description": ["This is Mumbai", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 1,
+        "city": "Delhi",
+        "images": ["images/Delhi/1.jpg", "images/Delhi/2.jpg", "images/Delhi/3.jpg", "images/Delhi/4.jpg", "images/Delhi/5.jpg"],
+        "description": ["This is Delhi", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 2,
+        "city": "Manali",
+        "images": ["images/Manali/1.jpg", "images/Manali/2.jpg", "images/Manali/3.jpg", "images/Manali/4.jpg", "images/Manali/5.jpg"],
+        "description": ["This is Manali", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 3,
+        "city": "Bangalore",
+        "images": ["images/Bangalore/1.jpg", "images/Bangalore/2.jpg", "images/Bangalore/3.jpg", "images/Bangalore/4.jpg", "images/Bangalore/5.jpg"],
+        "description": ["This is Bangalore", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 4,
+        "city": "Lucknow",
+        "images": ["images/Lucknow/1.jpg", "images/Lucknow/2.jpg", "images/Lucknow/3.jpg", "images/Lucknow/4.jpg", "images/Lucknow/5.jpg"],
+        "description": ["This is Lucknow", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 5,
+        "city": "Kanpur",
+        "images": ["images/Kanpur/1.jpg", "images/Kanpur/2.jpg", "images/Kanpur/3.jpg", "images/Kanpur/4.jpg", "images/Kanpur/5.jpg"],
+        "description": ["This is Kanpur", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 6,
+        "city": "Kolkata",
+        "images": ["images/Kolkata/1.jpg", "images/Kolkata/2.jpg", "images/Kolkata/3.jpg", "images/Kolkata/4.jpg", "images/Kolkata/5.jpg"],
+        "description": ["This is Kolkata", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 7,
+        "city": "Chennai",
+        "images": ["images/Chennai/1.png", "images/Chennai/2.jpg", "images/Chennai/3.jpg", "images/Chennai/4.jpg", "images/Chennai/5.jpg"],
+        "description": ["This is Chennai", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 8,
+        "city": "Goa",
+        "images": ["images/Goa/1.jpg", "images/Goa/2.jpg", "images/Goa/3.jpg", "images/Goa/4.jpg", "images/Goa/5.jpg"],
+        "description": ["This is Goa", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }, {
+        "id": 9,
+        "city": "Pune",
+        "images": ["images/Pune/1.jpg", "images/Pune/2.jpg", "images/Pune/3.jpg", "images/Pune/4.jpg", "images/Pune/5.jpg"],
+        "description": ["This is Pune", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
+    }
+]
+}

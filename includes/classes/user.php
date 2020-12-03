@@ -36,7 +36,12 @@ class User{
                     }
                     else{
                         
-                        $user_image = rand(1,12);
+                        if($this->gender == 'Female'){
+                            $user_image = rand(1,17);
+                        }
+                        else{
+                            $user_image = rand(18,36);
+                        }
 
                         $this->hash_pass = password_hash($this->user_pass, PASSWORD_DEFAULT);
                         $sql = "INSERT INTO `users` (username, user_email, user_password, user_image, gender, city, contact, bio) VALUES(:username, :user_email, :user_pass, :user_image, :gender, :city, :contact, :bio)";

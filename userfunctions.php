@@ -17,14 +17,16 @@ if(isset($_GET['action']) && isset($_GET['id'])){
         else{
             // ASSIGN TO VARIABLE 
             $guide_id = $_GET['id'];
+            $charge = $_GET['charge'];
+            $date = $_GET['date'];
             $my_id = $_SESSION['user_id'];
 
             // IF GET SEND REQUEST ACTION
             if($_GET['action'] == 'send_req'){
-                $frnd_obj->make_pending_friends($my_id, $guide_id);
-                // CHECK IS REQUEST ALREADY SENT OR NOT
-                // is_request_already_sent() FUNCTION RETURN TRUE OR FLASE
-                
+                $frnd_obj->make_pending_friends($my_id, $guide_id, $charge, $date);
+            }
+            elseif($_GET['action'] == 'cancel_req'){
+                $frnd_obj->cancel_request($my_id, $guide_id);
             }
             else{
                 redirect_to_profile();
@@ -39,3 +41,4 @@ if(isset($_GET['action']) && isset($_GET['id'])){
 else{
     redirect_to_profile();
 }
+?>

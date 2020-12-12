@@ -45,10 +45,10 @@ body{
 
 .card .card-body{
     text-align:center;
-    visibility: hidden ;
-    transform: translateY(-150px);
-    height: 0px;
     background-color: rgb(233, 213, 241);
+    visibility: visible;
+    transform: translateY(-50px);
+    height: auto;
 }
 
 .card .card-title{
@@ -56,7 +56,9 @@ body{
     color : green;
 }
 
-
+.nav-items{
+    margin: auto 5px;
+}
 
 
 
@@ -82,4 +84,24 @@ body{
 .badge{
     background: rgb(31, 143, 146);
     border-radius: 20px;
+}
+
+.errorMsg{
+    border: 2px solid whitesmoke;
+    background-color:  #CC1F1A;
+    opacity: 0.8;
+    color: whitesmoke;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.successMsg{
+    border: 2px solid whitesmoke;
+    background-color:  #1F9D55;
+    opacity: 0.8;
+    color: whitesmoke;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
 }

@@ -249,5 +249,108 @@ class Friend{
         }
     }
 
+    
+    // add product 
+    public function addproduct($vendorid, $productname, $category, $description, $price, $productimage){
+        try{
+            
+            if(!empty($vendorid) && !empty($productname) && !empty($price) && !empty($category) && !empty($description) && !empty($productimage)) {
+
+                        $sql = "INSERT INTO `product`(`vendorid`, `productname`, `category`, `description`, `price`, `productimage`) VALUES (:vendorid, :productname, :category, :description, :price, :productimage)";
+            
+                        $sign_up_stmt = $this->db->prepare($sql);
+                        //BIND VALUES
+                        $sign_up_stmt->bindValue(':vendorid',$vendorid, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':productname',$productname, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':category',$category, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':description',$description, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':price',$price, PDO::PARAM_STR);
+                        $sign_up_stmt->bindValue(':productimage',$productimage, PDO::PARAM_STR);
+                        $sign_up_stmt->execute();
+                        return ['successMessage' => 'Product added successfully.'];                   
+            }
+            else{
+                return ['errorMessage' => 'Please fill in all the required fields.'];
+            } 
+            }
+            catch (PDOException $e) {
+                die($e->getMessage());
+            }
+        }
+
+        public function showvendorproductlist($vendorid, $send_data){
+            try {
+                $productsql = 'select * from `product` where vendorid = :vendorid';
+                $product_stmt = $this->db->prepare($productsql);
+                $product_stmt->bindValue(':vendorid',$vendorid, PDO::PARAM_INT);
+                $product_stmt->execute();
+                $row_number = $product_stmt->rowCount();
+                if ($send_data){
+                    return $product_stmt->fetchall(PDO::FETCH_OBJ);
+                }
+                else{
+                    return $row_number;
+                }
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+        }
+
+        public function allproduct(){
+            try {
+                $product_all = $this->db->prepare('select city, productimage, productname, price, productid FROM `vendor` JOIN `product` ON vendor.vendorid = product.vendorid ');
+                $product_all->execute();
+                $row_number = $product_all->rowCount();
+                if ($row_number>0){
+                    return $product_all->fetchall(PDO::FETCH_OBJ);
+                }
+                else{
+                    return ['errorMessage' => 'No Products available right now!'];
+                }
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+            
+        }
+
+        public function productbycity($city){
+            try {
+                $product_all = $this->db->prepare('select city, productimage, productname, price, productid FROM `vendor` JOIN `product` ON vendor.vendorid = product.vendorid where city = ?');
+                $product_all->execute([$city]);
+                $row_number = $product_all->rowCount();
+                if ($row_number>0){
+                    return $product_all->fetchall(PDO::FETCH_OBJ);
+                }
+                else{
+                    return ['errorMessage' => 'No Products available  right now!'];
+                }
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+            
+        }
+
+        public function showproductbyid($productid){
+            try {
+                $productsql = 'select * from `product` JOIN `vendor` ON product.vendorid = vendor.vendorid where productid = ?';
+                $productstmt = $this->db->prepare($productsql);
+                $productstmt->execute([$productid]);
+                return $productstmt->fetch(PDO::FETCH_OBJ);
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+        }
+//4 product
+        public function randomproduct(){
+            try {
+                $productsql = 'select * from `product` ORDER BY RAND() LIMIT 3';
+                $productstmt = $this->db->prepare($productsql);
+                $productstmt->execute();
+                return $productstmt->fetchall(PDO::FETCH_OBJ);
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+        }
+
 }
 ?>

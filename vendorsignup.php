@@ -1,13 +1,13 @@
 <?php
 require 'includes/init.php';
-// IF GUIDE MAKING SIGNUP REQUEST
-if(isset($_POST['guidename']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['gender']) 
+// IF vendor MAKING SIGNUP REQUEST
+if(isset($_POST['vendorname']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['address']) 
 && isset($_POST['contact']) && isset($_POST['bio']) && isset($_POST['city'])){
-  $result = $guide_obj->singUpguide($_POST['guidename'],$_POST['email'],$_POST['password'],$_POST['gender'],$_POST['contact'],$_POST['bio'],$_POST['city']);
+  $result = $vendor_obj->singUpvendor($_POST['vendorname'],$_POST['email'],$_POST['password'],$_POST['address'],$_POST['contact'],$_POST['city'],$_POST['bio']);
 }
-// IF GUIDE ALREADY LOGGED IN
+// IF vendor ALREADY LOGGED IN
 if(isset($_SESSION['email'])){
-  header('Location: guide_profile.php');
+  header('Location: vendorprofile.php');
 }
 ?>
 <html lang="en">
@@ -23,33 +23,23 @@ if(isset($_SESSION['email'])){
    <!-- <link rel="stylesheet" href="./style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     
-    <title>Guide Sign Up</title>
+    <title>vendor Sign Up</title>
 
 </head>
 
-<body id="guidesignup">
+<body id="vendorsignup">
 <div>
-  <h1>Guide Sign Up</h1>
+  <h1>Vendor Sign Up</h1>
     <br>
     <div class="container">
     <div class="myform">
     <form action="" method="POST" novalidate>
     <div class="row">
     <div class="form-group col-12">
-      <label for="guidename">Full Name</label>
-      <input type="text" id="guidename" class="form-control" name="guidename" spellcheck="false" placeholder="Enter your full name" required>
+      <label for="vendorname">Shop Name</label>
+      <input type="text" id="vendorname" class="form-control" name="vendorname" spellcheck="false" placeholder="Enter your full name" required>
     </div>
 
-
- <div class="form-group col-12">
-      <label for="gender">Gender</label><br>
-      <input type="radio" id="male" name="gender" value="Male">
-      <label for="male"> Male </label><br>
-      <input type="radio" id="female" name="gender" value="Female">
-      <label for="female"> Female </label><br>
-      <input type="radio" id="other" name="gender" value="Other">
-      <label for="other"> Other </label><br>
- </div>
 
  <div class="form-group col-12">
       <label for="contact">Contact no.</label>
@@ -83,20 +73,31 @@ if(isset($_SESSION['email'])){
       </div>
 
       <div class="form-group col-12">
-      <label for="bio">Tell us about yourself</label>
+      <label for="address">Address</label>
       <textarea class="form-control" 
-      id="bio" name="bio" rows="4" 
-      maxlength = "800" 
-      spellcheck="false" 
-      placeholder="Wrap it up in 100 words.">
-    </textarea>
+        id="address" name="address" rows="4" 
+        maxlength = "800" 
+        spellcheck="false" 
+        placeholder="Enter your shop address.">
+      </textarea>
+      </div>
+
+      <div class="form-group col-12">
+      <label for="bio">About your business</label>
+      <textarea class="form-control" 
+        id="bio" name="bio" rows="4" 
+        maxlength = "800" 
+        spellcheck="false" 
+        placeholder="Wrap it up in 100 words.">
+      </textarea>
       </div>
 
       <input type="submit" name="submit" id="submit" value="Sign Up" class="btn btn-outline-success btn-md ml-auto">
     
-      <a href="guidelogin.php" class="btn btn-outline-info btn-md form_link mr-auto">Login</a>
+      
     </div>
     </form>
+    <a href="vendorlogin.php" class="btn btn-outline-info btn-md form_link mr-auto">Login</a>
     
 
     <div>  

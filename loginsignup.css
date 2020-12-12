@@ -1,0 +1,96 @@
+
+ #guidesignup {
+    background: url(images/image3.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+ #usersignup {
+    background: url(images/image1.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+ }
+ 
+ #userlogin {
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url(images/image1.jpg); */
+    background: url(images/image13.jpg);
+    background-attachment: fixed; 
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+ }
+ 
+ #guidelogin {
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url(images/image1.jpg); */
+     background: url(images/image9.jpg);
+     background-attachment: fixed; 
+     background-size: cover;
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ #vendorsignup {
+   background: url(images/image17.jpg);
+   background-attachment: fixed; 
+   background-size: cover;
+   font-family: 'Open Sans', sans-serif;
+}
+
+#vendorlogin {
+   /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url(images/image1.jpg); */
+   background: url(images/image19.jpg);
+   background-attachment: fixed; 
+   font-family: 'Open Sans', sans-serif;
+   background-size: cover;
+}
+ 
+ h1{
+     color: rgb(255, 255, 255) !important;
+     border-radius: 20%;
+     font-weight: bold;
+     font-size: 35px;
+     text-align: center;
+     width: max-content;
+     margin: 20px auto 0px auto;
+     padding: 10px;
+     opacity: 1;
+     
+ }
+ 
+ textarea {
+    content: none;
+    resize: none;
+ }
+ .myform{
+    background: whitesmoke; 
+    opacity: 0.9;  /*just remove this line or change it to 0.9 or 0.7*/
+     width: 60%;
+     height: auto;
+     padding: 25px 25px 25px 25px;
+     border-radius: 10px;
+     margin: 20px auto;
+     margin-top: 0px;
+ }
+
+
+
+ .errorMsg{
+    border: 2px solid whitesmoke;
+    background-color:  #CC1F1A;
+    opacity: 0.8;
+    color: whitesmoke;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.successMsg{
+    border: 2px solid whitesmoke;
+    background-color:  #1F9D55;
+    opacity: 0.8;
+    color: whitesmoke;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+

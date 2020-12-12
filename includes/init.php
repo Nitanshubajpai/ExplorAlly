@@ -6,6 +6,7 @@ require 'classes/database.php';
 require 'classes/user.php';
 require 'classes/friend.php';
 require 'classes/guide.php';
+require 'classes/vendor.php';
 
 // DATABASE CONNECTIONS
 $db_obj = new Database();
@@ -17,4 +18,6 @@ $user_obj = new User($db_connection);
 $frnd_obj = new Friend($db_connection);
 // GUIDE OBJECT
 $guide_obj = new guide($db_connection);
+// VENDOR OBJECT
+$vendor_obj = new vendor($db_connection);
 ?>

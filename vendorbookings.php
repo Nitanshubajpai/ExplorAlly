@@ -1,9 +1,9 @@
 <?php
 require 'includes/init.php';
 
-if(isset($_SESSION['guide_id']) && isset($_SESSION['email'])){
-    $guide_data = $guide_obj->find_guide_by_id($_SESSION['guide_id']);
-    if($guide_data ===  false){
+if(isset($_SESSION['vendor_id']) && isset($_SESSION['email'])){
+    $vendor_data = $vendor_obj->find_vendor_by_id($_SESSION['vendor_id']);
+    if($vendor_data ===  false){
         header('Location: logout.php');
         exit;
     }
@@ -13,11 +13,11 @@ else{
     exit;
 }
 // TOTAL REQUESTS
-$get_req_num = $frnd_obj->request_notification($_SESSION['guide_id'], false);
+$get_req_num = $frnd_obj->request_notification($_SESSION['vendor_id'], false);
 // TOTLA FRIENDS
-$get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['guide_id'], false);
-// GET MY($_SESSION['user_id']) ALL FRIENDS
-$get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
+$get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['vendor_id'], false);
+// GET MY($_SESSION['vendor_id']) ALL FRIENDS
+$get_all_friends = $frnd_obj->get_all_bookings($_SESSION['vendor_id'], true);
 
 ?>
 
@@ -43,13 +43,20 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
     </button>
 
 <div class='collapse navbar-collapse' id='collapse_target'>
-<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140' height='70';></span>
-<ul class='navbar-nav mr-auto'>
+<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140'
+    height='70';></span>
+    <ul class='navbar-nav mr-auto'>
 <li class='nav-item '>
-    <a class='nav-link' href='./guideprofile.php'><span class="fa fa-home fa-lg"></span> Home <span class="badge navbar-text"><?php echo $get_req_num;?></a>
+    <a class='nav-link' href='./vendorprofile.php'><span class="fa fa-home fa-lg"></span> Home</a>
+</li>
+<li class='nav-item'>
+    <a class='nav-link' href='./discover.php'><span class="fa fa-fire fa-lg"></span> Discover</a>
 </li>
 <li class='nav-item active'>
     <a class='nav-link' href='#'><span class="fa fa-ticket fa-lg"></span> Bookings <span class="badge navbar-text"><?php echo $get_frnd_num;?></span></a>
+</li>
+<li class='nav-item'>
+    <a class='nav-link' href='./aboutus.php'><span class="fa fa-info fa-lg"></span> About Us</a>
 </li>
 <li class='nav-item'>
     <a class='nav-link' href='#contactus'><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
@@ -57,10 +64,10 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
 </ul>
 <ul class='navbar-nav ml-auto'>
 <li class='nav-item'>
-<span class='navbar-text' href='#'> Welcome, <?php echo  $guide_data->guidename;?></span>
+<span class='navbar-text' href='#'> Welcome, <?php echo  $vendor_data->vendorname;?></span>
 </li>
 <li class='nav-item'>
-<img class='img-fluid' height='50' width='50' src="profile_images/<?php echo $guide_data->guide_image; ?>" alt="Profile image" >
+<img class='img-fluid' height='50' width='50' src="profile_images/<?php echo $vendor_data->vendor_image; ?>" alt="Profile image">
 </li>
 <li class='nav-item'>
 <li><a class='nav-link' href="logout.php" rel="noopener noreferrer"><span class="fa fa-sign-out fa-lg"></span> Logout</a></li>
@@ -68,10 +75,8 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
 </ul>
 </div>
 </nav>
-
             <br/>
             <h1 style="text-align:center; margin-top:40px;">ALL BOOKINGS</h1>
-             
                  <?php
                 if($get_frnd_num > 0){
                  foreach($get_all_friends as $row){
@@ -100,7 +105,7 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
                                                 <br/>
                                             </div>
                                             <div class="col-sm-6">
-                                                <p class="font-weight-bold">CONTACT</p>
+                                                <p class="font-weight-bold">CONATCT</p>
                                                 <h6 class="text-muted">'.$row[0]->contact.'</h6>
                                                 <br/>
                                             </div>
@@ -125,7 +130,8 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
                     else{
                         echo '<h3 class="nouser">You have no bookings currently</h3><br/>';
                     }
-                     ?>     
+                     ?>
+                
                 <br/>
 
 
@@ -135,8 +141,11 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['guide_id'], true);
                 <div class="col-4 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="./guideprofile.php">Home</a></li>
-                        <li><a href="./guidebookings.php">Bookings</a></li>
+                        <li><a href="./vendorprofile.php">Home</a></li>
+                        <li><a href="./aboutus.php">About Us</a></li>
+                        <li><a href="./discover.php">Discover</a></li>
+                        <li><a href="./vendorbookings.php">Bookings</a></li>
+
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">

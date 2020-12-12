@@ -143,6 +143,22 @@ class guide{
             die($e->getMessage());
         }
     }
+//4 random guide
+    function randomguide(){
+        try{
+            $get_guide = $this->db->prepare("SELECT * FROM `guide` ORDER BY RAND() LIMIT 3");
+            $get_guide->execute();
+            if($get_guide->rowCount() > 0){
+                return $get_guide->fetchAll(PDO::FETCH_OBJ);
+            }
+            else{
+                return false;
+            }
+        }
+        catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
 
     // FETCH GUIDE by CITY
     function guide_by_city($city){

@@ -1,24 +1,21 @@
 <?php
 require 'includes/init.php';
-
 if(isset($_SESSION['user_id']) && isset($_SESSION['email'])){
     $user_data = $user_obj->find_user_by_id($_SESSION['user_id']);
     if($user_data ===  false){
         header('Location: logout.php');
         exit;
     }
+    // FETCH ALL USERS WHERE ID IS NOT EQUAL TO MY ID
+    $allproduct = $frnd_obj->allproduct();
+    
 }
 else{
     header('Location: logout.php');
     exit;
 }
-// TOTAL REQUESTS
-$get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
-// TOTLA FRIENDS
+// TOTAL FRIENDS
 $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
-// GET MY($_SESSION['user_id']) ALL FRIENDS
-$get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
-
 ?>
 
 <!doctype html>
@@ -27,14 +24,13 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="bookings.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="userprofile.css">
 
-    <title>Bookings</title>
+    <title>Home</title>
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -45,18 +41,15 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
 <div class='collapse navbar-collapse' id='collapse_target'>
 <span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140'
     height='70';></span>
-    <ul class='navbar-nav mr-auto'>
-<li class='nav-item '>
-    <a class='nav-link' href='./userprofile.php'><span class="fa fa-home fa-lg"></span> Home</a>
+<ul class='navbar-nav mr-auto'>
+<li class='nav-item active'>
+    <a class='nav-link' href='./redirect.php'><span class="fa fa-home fa-lg"></span> Home</a>
 </li>
 <li class='nav-item'>
     <a class='nav-link' href='./discover.php'><span class="fa fa-fire fa-lg"></span> Discover</a>
 </li>
-<li class='nav-item active'>
-    <a class='nav-link' href='#'><span class="fa fa-ticket fa-lg"></span> Bookings <span class="badge navbar-text"><?php echo $get_frnd_num;?></span></a>
-</li>
 <li class='nav-item'>
-    <a class='nav-link' href='./aboutus.php'><span class="fa fa-info fa-lg"></span> About Us</a>
+    <a class='nav-link' href='./userbookings.php'><span class="fa fa-ticket fa-lg"></span> Bookings <span class="badge navbar-text"><?php echo $get_frnd_num;?></span></a>
 </li>
 <li class='nav-item'>
     <a class='nav-link' href='#contactus'><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
@@ -75,67 +68,118 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
 </ul>
 </div>
 </nav>
-            <br/>
-            <h1 style="text-align:center; margin-top:40px;">ALL BOOKINGS</h1>
-                 <?php
-                if($get_frnd_num > 0){
-                 foreach($get_all_friends as $row){
-                    echo '
-                    <div class="container">
-                    <div class="row d-flex justify-content-center">
-                 <div class="col md-10 mt-5 pt-5">
-                   <div class="row z-depth-3">
-                        <div class="col-sm-4 image ">
-                                <div class="card-block text-center">
-                                <img src="profile_images/'.$row[0]->guide_image.'" alt="Profile image" width="300px" height="auto">
-                                </div>
-                            </div>
-                            <div class="col-sm-8 details">
-                                <h3 class="mt-3 text-center font-weight-bold">INFORMATION</h3>
-                                <hr class="badge-primary mt-0 wd-25">
-                                    <div class="row">
-                                            <div class="col-sm-6">
-                                                <p class="font-weight-bold">NAME</p>
-                                                <h6 class="text-muted">'.$row[0]->guidename.'</h6>
-                                                <br/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p class="font-weight-bold">CITY</p>
-                                                <h6 class="text-muted">'.$row[0]->city.'</h6>
-                                                <br/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p class="font-weight-bold">CONTACT</p>
-                                                <h6 class="text-muted">'.$row[0]->contact.'</h6>
-                                                <br/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p class="font-weight-bold">CHARGE</p>
-                                                <h6 class="text-muted">'.$row[1].'</h6>
-                                                <br/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p class="font-weight-bold">DATE</p>
-                                                <h6 class="text-muted">'.$row[2].'</h6>
-                                                <br/>
-                                            </div>
-                                     </div>
-                            </div>
-                             </div>
-                         </div>
-                         </div>
-                </div>';
-                    }
-                }
-                    else{
-                        echo '<h3 class="nouser">You have no bookings currently</h3><br/>';
-                    }
-                     ?>
+
+<header class='jumbotron'>
+    <div class="box">
+        <h1>Shoround</h1>
+            <form action="" class="form-inline" method="GET">
+            <div class=" form-group mx-sm-3 mb-2">
+                <select name="city" id="city" class="form-control" placeholder="Choose a city">
+                    <option value="Allguides">All cities</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Pune">Pune</option>
+                </select>
+                <input type="submit" value="FILTER" class="btn btn-warning btn-md ml-auto">
+                </div>
+            </form>         
+            </div>
+</header>
+<br/>
+            <?php
+            if(isset($_GET['city'])){
+                $productbycity = $frnd_obj->productbycity($_GET['city']);
+                $city = $_GET['city'];
                 
-                <br/>
+                if($city ==='Allguides' || $city==='') {       
+                    echo '<h1  style="text-align:center;">All Available Products</h1>
+                    <div class="container">';
+                        if($allproduct){
+                            echo'<div class="row main-row">';
+                            foreach($allproduct as $row){
+                                echo '<div class="col md-4 mb-5">
+                                <div class="card p-3" style="width: 18rem;">
+                                        <img class="card-img-top shadow" src="products/'.$row->productimage.'" alt="Profile image" >
+                                        <div class="card-body">
+                                        <h5 class="card-title">'.$row->productname.'</h5>
+                                        <p class="card-text">Rs '.$row->price.'</p>
+                                        <p class="card-text">'.$row->city.'</p>
+                                        <a href="productprofile.php?id='.$row->productid.'" class="btn btn-outline-dark">View Item</a>
+                                        </div>
+                                        </div>
+                                    </div>';
+                            }
+                            echo'</div></div>';
+                        }
+                        else{
+                            echo '<h3 class="nouser">No Product found!</h3><br/>';
+                        }
+                        echo'</div></div>';
+                    }
+                    else {
+                        echo '<h1 style="text-align:center;">To Shop from '.$city.'</h1>
+                        <div class="container">';
+                            if($productbycity){
+                                echo'<div class="row main-row">';
+                                foreach($productbycity as $row){
+                                    echo '<div class="col md-4 mb-5">
+                                    <div class="card p-3" style="width: 18rem;">
+                                            <img class="card-img-top shadow" src="products/'.$row->productimage.'" alt="Profile image" >
+                                            <div class="card-body">
+                                            <h5 class="card-title">'.$row->productname.'</h5>
+                                            <p class="card-text">Rs '.$row->price.'</p>
+                                            <p class="card-text">'.$row->city.'</p>
+                                            <a href="productprofile.php?id='.$row->productid.'" class="btn btn-outline-dark">View Item</a>
+                                            </div>
+                                            </div>
+                                        </div>';
+                                }
+                                echo'</div></div>';
+                            }
+                            else{
+                                echo '<h3 class="nouser">No Products found from this city!</h3><br/>';
+                            }
+                    }
+            }
+            else{
+                echo '<h1  style="text-align:center;">All Available Products</h1>
+                <div class="container">';
+                    if($allproduct){
+                        echo'<div class="row main-row">';
+                        foreach($allproduct as $row){
+                            echo '<div class="col md-4 mb-5">
+                            <div class="card p-3" style="width: 18rem;">
+                                    <img class="card-img-top shadow" src="products/'.$row->productimage.'" alt="Profile image" >
+                                    <div class="card-body">
+                                    <h5 class="card-title">'.$row->productname.'</h5>
+                                    <p class="card-text">Rs '.$row->price.'</p>
+                                    <p class="card-text">'.$row->city.'</p>
+                                    <a href="productprofile.php?id='.$row->productid.'" class="btn btn-outline-dark">View Item</a>
+                                    </div>
+                                    </div>
+                                </div>';
+                        }
+                        echo'</div></div>';
+                    }
+                    else{
+                        echo '<h3 class="nouser">No Product found!</h3><br/>';
+                    }
+                    echo'</div></div>';
+                }
+            
+                ?>
+         
+        </div>
+    </div>
 
-
-                <footer id='contactus' class="footer">
+<footer id='contactus' class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2">
@@ -220,11 +264,9 @@ $(document).ready(function(){
   });
 });
 
-/*
 $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop()>200);
 });
-*/
 </script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS

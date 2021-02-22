@@ -5,8 +5,7 @@ body{
 }
 
 .navbar-dark {
-     background-color:red !important;
-     height : auto;
+	background: rgba(0, 0, 0, 0.767) !important;
 }
 
 
@@ -20,7 +19,7 @@ body{
     padding: 20px 0px 20px 0px;
   }
 .text-center {
-    background-color: white;
+    color: white;
     opacity: 0.5;
 }
 

@@ -22,10 +22,7 @@ body{
     color: white;
     padding: 20px 0px 20px 0px;
   }
-.icon-bar {
-    background-color: white;
-    opacity: 0.5;
-}
+
 .copyright {
 	color:green !important;
 }

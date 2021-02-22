@@ -8,6 +8,10 @@ body{
 	background: rgba(0, 0, 0, 0.767);
 }
 
+
+
+
+
 .jumbotron{
     margin-top: -60px;
     background: url("./images/imagec7.png")!important;
@@ -72,10 +76,9 @@ body{
 
 .card .card-body{
     text-align:center;
-    visibility: visible;
-    transform: translateY(-50px);
-    transition: .5s;
-    height: auto;
+    visibility: hidden ;
+    transform: translateY(-150px);
+    height: 0px;
     background-color: rgb(233, 213, 241);
 }
 .card .card-title{
@@ -87,6 +90,12 @@ body{
     color: rgb(2, 16, 138);
 }
 
+.card:hover .card-body{
+    visibility: visible;
+    transform: translateY(-50px);
+    transition: .5s;
+    height: auto;
+}
 
 .nouser{
     text-align: center !important;

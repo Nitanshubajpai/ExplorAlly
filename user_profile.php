@@ -34,7 +34,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="eachprofile.css">
+    <link rel="stylesheet" href="user_profile.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -47,7 +47,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
     </button>
 
 <div class='collapse navbar-collapse' id='collapse_target'>
-<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140' height='70';></span>
+<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140px' height='50px';></span>
 <ul class='navbar-nav mr-auto'>
 <li class='nav-item active'>
     <a class='nav-link' href='./userprofile.php'><span class="fa fa-home fa-lg"></span> Home</a>
@@ -199,7 +199,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
 		              India<br>
 		              <i class="fa fa-phone f-lag"></i> : +91 90043770XX<br>
 		              <i class="fa fa-fax fa-lag"></i> : +91 98205702XX<br>
-		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:shoround@gmail.com">shoround@gmail.com</a>
+		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:explorally@gmail.com">explorally@gmail.com</a>
 		           </address>
                 </div>
                 <div class="col-12 offset-1 col-sm-4 align-self-center">

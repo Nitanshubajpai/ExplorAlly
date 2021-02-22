@@ -93,13 +93,13 @@ INSERT INTO `guide` (`guideid`, `guidename`, `guide_email`, `guide_password`, `g
 (7, 'Harry Potter', 'harry@hogwarts.com', '$2y$10$9bNpSmVpUSMkp1ymeevRQe5lWxjshsKxJzn2YyDsyaOou4NeuVKJW', 'Male', 'Delhi', '1234123400', 'Avadacadabra', '23.png'),
 (8, 'Ron Weasley', 'ron@hogwarts.com', '$2y$10$eNp4h5TS2nWjvdE2X8v5tuv1HU8JGYpTpHG5osgIl6W8YY91loI92', 'Male', 'Bangalore', '1234123401', 'Alohomora', '26.png'),
 (9, 'Hermoine Granger', 'hermoine@hogwarts.com', '$2y$10$a9clMoUbvbIryc/sCwkAPuS.wtfDKCoSSenAHOwjPC.5MqbAhYnie', 'Female', 'Goa', '1234123402', 'Expectopatronum', '13.png'),
-(10, 'Alaska Young', 'alaska@gmail.com', '$2y$10$7IlhIZvvh6fTQyy4MnKVYOJNJ8V978mW/hwtgOLk/u3tyDwkEq.z6', 'Female', 'Mumbai', '1234567890', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '14.png'),
-(11, 'Miles Halter', 'miles@gmail.com', '$2y$10$rselBD0cx0nPOMGF3N7pnucOkKuTU42G7hdeepUjbPNa6cBzFCkyO', 'Male', 'Manali', '0000000000', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '27.png'),
-(12, 'Hazel Grace', 'hazel@gmail.com', '$2y$10$QD0NMn/bN4JyAvf4TKj7oOXB76gRGDZ1ozojcwc/ScCH.9brVyC9m', 'Female', 'Lucknow', '1231231231', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '15.png'),
-(13, 'Hassan Mirza', 'hassan@gmail.com', '$2y$10$2h7KYEPJDZbb8725qi5sceJJP9oe/kQX8iPuhYXVRMMfNu7qqBNkm', 'Male', 'Kanpur', '1231231231', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '28.png'),
-(14, 'Amir Pashtun', 'Amir@gmail.com', '$2y$10$EspU/cFSiBEZ443F0NvjFeSJlawzyyNtYhLTilvfowtSecufORc4G', 'Male', 'Kolkata', '1231231231', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '18.png'),
-(15, 'James Miller', 'james@gmail.com', '$2y$10$/9G18huXRLAzv5ARGIlSsOYwxJg6gTD5kxNxyRFC0YVypa4dOB1V.', 'Male', 'Chennai', '1231231231', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '30.png'),
-(16, 'Augustus Waters', 'Augustus@gmail.com', '$2y$10$7sZEQVeJucbHXPGkIcVMJ.wSPCm1RrveSbqa0bGi.DUo37r062sr.', 'Male', 'Mumbai', '1231231231', 'Hello, I am a guide welcome to shoround. Hire me for your next destination.', '32.png');
+(10, 'Alaska Young', 'alaska@gmail.com', '$2y$10$7IlhIZvvh6fTQyy4MnKVYOJNJ8V978mW/hwtgOLk/u3tyDwkEq.z6', 'Female', 'Mumbai', '1234567890', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '14.png'),
+(11, 'Miles Halter', 'miles@gmail.com', '$2y$10$rselBD0cx0nPOMGF3N7pnucOkKuTU42G7hdeepUjbPNa6cBzFCkyO', 'Male', 'Manali', '0000000000', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '27.png'),
+(12, 'Hazel Grace', 'hazel@gmail.com', '$2y$10$QD0NMn/bN4JyAvf4TKj7oOXB76gRGDZ1ozojcwc/ScCH.9brVyC9m', 'Female', 'Lucknow', '1231231231', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '15.png'),
+(13, 'Hassan Mirza', 'hassan@gmail.com', '$2y$10$2h7KYEPJDZbb8725qi5sceJJP9oe/kQX8iPuhYXVRMMfNu7qqBNkm', 'Male', 'Kanpur', '1231231231', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '28.png'),
+(14, 'Amir Pashtun', 'Amir@gmail.com', '$2y$10$EspU/cFSiBEZ443F0NvjFeSJlawzyyNtYhLTilvfowtSecufORc4G', 'Male', 'Kolkata', '1231231231', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '18.png'),
+(15, 'James Miller', 'james@gmail.com', '$2y$10$/9G18huXRLAzv5ARGIlSsOYwxJg6gTD5kxNxyRFC0YVypa4dOB1V.', 'Male', 'Chennai', '1231231231', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '30.png'),
+(16, 'Augustus Waters', 'Augustus@gmail.com', '$2y$10$7sZEQVeJucbHXPGkIcVMJ.wSPCm1RrveSbqa0bGi.DUo37r062sr.', 'Male', 'Mumbai', '1231231231', 'Hello, I am a guide welcome to ExplorAlly. Hire me for your next destination.', '32.png');
 
 -- --------------------------------------------------------
 

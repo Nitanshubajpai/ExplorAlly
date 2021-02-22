@@ -322,7 +322,7 @@ class Friend{
                     return $product_all->fetchall(PDO::FETCH_OBJ);
                 }
                 else{
-                    return ['errorMessage' => 'No Products available  right now!'];
+                    return false;
                 }
             } catch (PDOException $e) {
                 die($e->getMessage());

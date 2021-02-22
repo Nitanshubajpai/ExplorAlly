@@ -1,24 +1,3 @@
-<?php
-require 'includes/init.php';
-if(isset($_SESSION['user_id']) && isset($_SESSION['email'])){
-    $user_data = $user_obj->find_user_by_id($_SESSION['user_id']);
-    if($user_data ===  false){
-        header('Location: logout.php');
-        exit;
-    }
-    // FETCH ALL USERS WHERE ID IS NOT EQUAL TO MY ID
-    $all_guide = $guide_obj->all_guide();
-    
-}
-else{
-    header('Location: logout.php');
-    exit;
-}
-// REQUEST NOTIFICATION NUMBER
-$get_req_num = $frnd_obj->request_notification($_SESSION['user_id'], false);
-// TOTAL FRIENDS
-$get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
-?>
 
 <!doctype html>
 <html lang="en">
@@ -42,18 +21,14 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
     </button>
 
 <div class='collapse navbar-collapse' id='collapse_target'>
-<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140'
-    height='70';></span>
-
-<ul class='navbar-nav mr-auto'>
-<li class='nav-item'>
+<span class="nav-logo"><img href="#"src="images/logo.png" alt="LOGO"  width='140px'
+        height='50px';></span>
+    <ul class='navbar-nav mr-auto'>
+<li class='nav-item '>
     <a class='nav-link' href='./userprofile.php'><span class="fa fa-home fa-lg"></span> Home</a>
 </li>
 <li class='nav-item active'>
     <a class='nav-link' href='#'><span class="fa fa-fire fa-lg"></span> Discover</a>
-</li>
-<li class='nav-item'>
-    <a class='nav-link' href='./userbookings.php'><span class="fa fa-ticket fa-lg"></span> Bookings <span class="badge navbar-text"><?php echo $get_frnd_num;?></span></a>
 </li>
 <li class='nav-item'>
     <a class='nav-link' href='./aboutus.php'><span class="fa fa-info fa-lg"></span> About Us</a>
@@ -62,35 +37,9 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
     <a class='nav-link' href='#contactus'><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
 </li>
 </ul>
-<ul class='navbar-nav ml-auto'>
-<li class='nav-item'>
-<span class='navbar-text' href='#'> Welcome, <?php echo  $user_data->username;?></span>
-</li>
-<li class='nav-item'>
-<img class='img-fluid' height='50' width='50' src="profile_images/<?php echo $user_data->user_image; ?>" alt="Profile image">
-</li>
-<li class='nav-item'>
-<li><a class='nav-link' href="logout.php" rel="noopener noreferrer"><span class="fa fa-sign-out fa-lg"></span> Logout</a></li>
-</li>
-</ul>
 </div>
 </nav>
 <br/><br/>
-   <!-- <div class="container"> 
-        <h1 style="text-align:center;">Popular Cities</h1>
-        <div class="row main-row">
-         <div class="col md-4 mb-5">
-             <div class="card p-3" style="width: 18rem;">
-                    <img class="card-img-top shadow" src="mumbai/1.jpg" alt="Profile image" >
-                    <div class="card-body">
-                    <h5 class="card-title">Mumbai</h5>
-                         <p class="card-text"></p>
-                        <a href="" class="btn btn-outline-dark">Discover City</a>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <?php
     $jsondata = file_get_contents("cities.json");
@@ -103,8 +52,8 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
                             <div class="card-body">
                                     <h5 class="card-title">'.$city['city'].'</h5>
                                     <p class="card-text"></p>
-                                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#discover">
-                                    Discover City</button>
+                                    <a  href="city.php?id='.$city['id'].'" class="btn btn-outline-dark" >
+                                    Discover '.$city['city'].'</a>
                                     </div>
                                     </div>
                                 </div>';
@@ -113,52 +62,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
     
 ?>
 
-<footer id='contactus' class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./userprofile.php">Home</a></li>
-                        <li><a href="./aboutus.php">About Us</a></li>
-                        <li><a href="./discover.php">Discover</a></li>
-                        <li><a href="./userbookings.php">Bookings</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                <a href='randomgooglemaplink' target='blank'>
-								<h1>
-									<i class='fa fa-map-marker f-lag'></i>
-								</h1>
-							</a>
-                    <address>
-		              121, Shoround<br>
-		              Mumbai<br>
-		              India<br>
-		              <i class="fa fa-phone f-lag"></i> : +91 90043770XX<br>
-		              <i class="fa fa-fax fa-lag"></i> : +91 98205702XX<br>
-		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:shoround@gmail.com">shoround@gmail.com</a>
-		           </address>
-                </div>
-                <div class="col-12 offset-1 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube f-lag"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope f-lag"></i></a>
-                    </div>
-                </div>
-           </div>
-           <div class="row justify-content-center">
-                <div class="col-auto">
-                    <h6 class='copyright'>© Copyright 2020 Shoround</h5>
-                </div>
-           </div>
-        </div>
-    </footer>
+        <?php include('footer.php') ?>
 
     <!-- Modal -->
 <div class="modal fade" id="discover" tabindex="-1" role="dialog" aria-labelledby=" " aria-hidden="true">

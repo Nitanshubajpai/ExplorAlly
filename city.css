@@ -1,0 +1,62 @@
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-dark {
+	background: rgba(0, 0, 0, 0.767);
+}
+
+.footer{
+    
+    position: relative;
+    background-color: #0e0e0e;
+    opacity: 0.9;
+    margin: 0px auto;
+    color: white;
+    padding: 20px 0px 20px 0px;
+  }
+.text-center {
+    color :white;
+    opacity: 0.5;
+}
+
+.copyright {
+	color:whitesmoke;
+}
+
+h2{
+    color: red;
+    font-weight: bold;
+}
+
+.badge{
+    background: rgb(31, 143, 146);
+    border-radius: 20px;
+}
+
+.cityimg{
+    padding: 50px;
+}
+
+ h3 {
+    color: purple !important;
+    font-weight: bold;
+}
+
+
+
+
+.imgplaces {
+    padding: 5px;
+    height: 200px !important;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+ 
+.btn{
+    color: white;
+}
+

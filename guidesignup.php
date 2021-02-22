@@ -27,7 +27,7 @@ if(isset($_SESSION['email'])){
 
 </head>
 
-<body id="guidesignup">
+<body>
 <div>
   <h1>Guide Sign Up</h1>
     <br>

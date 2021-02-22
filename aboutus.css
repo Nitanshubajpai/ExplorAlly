@@ -23,7 +23,7 @@ body{
         padding: 20px 0px 20px 0px;
       }
 .text-center {
-        background-color: white;
+        color: white;
         opacity: 0.5;
     }
 
@@ -96,10 +96,3 @@ h3 {
     border-radius: 20px;
 }
 
-
-.imgabout {
-    width: 500px;
-    height: auto;
-    margin: 5px 0px;
-
-}

@@ -1,55 +1,768 @@
 {
     "cities": [
         {
-        "id": 0,
-        "city": "Mumbai",
-        "images": ["images/Mumbai/1.jpg", "images/Mumbai/2.jpg", "images/Mumbai/3.jpg", "images/Mumbai/4.jpg", "images/Mumbai/5.jpg"],
-        "description": ["This is Mumbai", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 1,
-        "city": "Delhi",
-        "images": ["images/Delhi/1.jpg", "images/Delhi/2.jpg", "images/Delhi/3.jpg", "images/Delhi/4.jpg", "images/Delhi/5.jpg"],
-        "description": ["This is Delhi", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 2,
-        "city": "Manali",
-        "images": ["images/Manali/1.jpg", "images/Manali/2.jpg", "images/Manali/3.jpg", "images/Manali/4.jpg", "images/Manali/5.jpg"],
-        "description": ["This is Manali", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 3,
-        "city": "Bangalore",
-        "images": ["images/Bangalore/1.jpg", "images/Bangalore/2.jpg", "images/Bangalore/3.jpg", "images/Bangalore/4.jpg", "images/Bangalore/5.jpg"],
-        "description": ["This is Bangalore", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 4,
-        "city": "Lucknow",
-        "images": ["images/Lucknow/1.jpg", "images/Lucknow/2.jpg", "images/Lucknow/3.jpg", "images/Lucknow/4.jpg", "images/Lucknow/5.jpg"],
-        "description": ["This is Lucknow", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 5,
-        "city": "Kanpur",
-        "images": ["images/Kanpur/1.jpg", "images/Kanpur/2.jpg", "images/Kanpur/3.jpg", "images/Kanpur/4.jpg", "images/Kanpur/5.jpg"],
-        "description": ["This is Kanpur", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 6,
-        "city": "Kolkata",
-        "images": ["images/Kolkata/1.jpg", "images/Kolkata/2.jpg", "images/Kolkata/3.jpg", "images/Kolkata/4.jpg", "images/Kolkata/5.jpg"],
-        "description": ["This is Kolkata", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 7,
-        "city": "Chennai",
-        "images": ["images/Chennai/1.png", "images/Chennai/2.jpg", "images/Chennai/3.jpg", "images/Chennai/4.jpg", "images/Chennai/5.jpg"],
-        "description": ["This is Chennai", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 8,
-        "city": "Goa",
-        "images": ["images/Goa/1.jpg", "images/Goa/2.jpg", "images/Goa/3.jpg", "images/Goa/4.jpg", "images/Goa/5.jpg"],
-        "description": ["This is Goa", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }, {
-        "id": 9,
-        "city": "Pune",
-        "images": ["images/Pune/1.jpg", "images/Pune/2.jpg", "images/Pune/3.jpg", "images/Pune/4.jpg", "images/Pune/5.jpg"],
-        "description": ["This is Pune", "Something else 1", "Something else 2", "Something else 3", "Something else 4"]
-    }
-]
+            "id": 0,
+            "city": "Mumbai",
+            "images": [
+                "images/Mumbai/1.jpg",
+                "images/Mumbai/2.jpg",
+                "images/Mumbai/3.jpg",
+                "images/Mumbai/4.jpg",
+                "images/Mumbai/5.jpg"
+            ],
+            "description": [
+                "With its lovely chaotic streets, impressive colonial buildings, and vibrant atmosphere, Mumbai is definitely something you should see with your own eyes. This is a city where fine dining restaurants stand side by side with crowded street food stalls, and swanky fashion boutiques share space with colorful bazaars. Nevertheless, Mumbai is home to wonderful history and art museums, dazzling shopping, and the nation’s best nightlife. It also houses the largest tropical forest in an urban zone, a giant human laundromat, and some of Asia’s biggest slums.",
+                "From the tiny fishing village to the big, bombastic city that it is today, Mumbai has experienced a rampant evolution, and so did its fantastic cuisine. Based mainly on rice, vegetables, fish, coconut, curries, and homemade sweets, the food in Mumbai is varied, spicy, and delicious, especially when you try it on the street.  Mumbai is the city of stalls and vendors, where delicacies are available at each corner. You don’t have to dress up or pay a ridiculous price to experience its rich gastronomy. Of course, if fine dining is what you’re looking for, you’re in for a treat as Mumbai boasts some of the best and most exclusive restaurants in India. Among the most popular regional dishes here are Akuri on toast (scrambled eggs with onions, tomatoes, red chilli powder, and fresh coriander, usually served for breakfast), the famous Bombay sandwich (buttered bread with beetroot, boiled potatoes, cucumbers, tomatoes, onion, and mint), Bhel puri, Kebab, and Kanda poha.",
+                "Mumbai is filled with fascinating bazaars where shopping is both an adventure and a memorable cultural experience, not to mention a great way to discover the city. There’s no better way to soak up the local vibe and somehow capture the magic of India than by rambling through the bazaars’ charming stalls bursting with beautiful embroideries and colorful silks. A city that mixes with such passion the thrill of its traditional Indian bazaars with the elegance of the modern shopping malls can’t be anything but a heaven for shopaholics. Some of the most popular shopping spots in Mumbai include Heera Panna Shopping Center, Crawford Market, Fashion Street, Bombay Electric (Indian design at its best), Colaba Causeway (cheap street shopping), Chor Bazaar (antiques), Mutton Street, and Zaveri Bazaar."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.6979981375!2d72.60027355103736!3d19.082037988655305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1608008657420!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Colaba",
+                    "detail": "The cliche of old-world charm applies to Mumbai's Colaba neighborhood, which was originally one of the seven islands that made up Bombay under Portuguese possession. The British started developing the area in the 1800s, and although Colaba has evolved into the city's unofficial tourist headquarters, it retains many atmospheric buildings with various styles of architecture. These top things to do in Colaba incorporate the district's heritage. One of Mumbai's top attractions and the city's most famous monument, the iconic Gateway of India is a popular place to start exploring Colaba. It was designed in Indo-Saracenic style by Scottish architect George Wittet (who designed many other landmark monuments in Mumbai), combining Hindu and Muslim architecture, with elements of the Roman triumphal arch. Opposite the Gateway of India, the luxurious Taj Mahal Palace and Tower Hotel was completed in 1903 and is the flagship property of India's Taj Hotels Palaces Resorts Safaris group. The interesting shift in Mumbai's architectural styles—from Gothic to Gothic Revival to Indo-Saracenic to Art Deco—can be seen around Colaba. The market stalls that line Colaba Causeway attract locals and tourists alike, who come to buy souvenirs, cheap junk jewelry, shoes, clothes and more.",
+                    "images": [
+                        "images/Mumbai/places/colaba/1.webp",
+                        "images/Mumbai/places/colaba/2.jpg",
+                        "images/Mumbai/places/colaba/3.jpg",
+                        "images/Mumbai/places/colaba/4.jpg",
+                        "images/Mumbai/places/colaba/5.jpg",
+                        "images/Mumbai/places/colaba/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608041508163!6m8!1m7!1sCAoSLEFGMVFpcE9GalpGanhUYWJXMldGNEIxd0swNFVBc2NjRWRSVXYzclp0dDkt!2m2!1d18.92213!2d72.83382999999999!3f173.18752852268952!4f16.91543768503061!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Bandra",
+                    "detail": "Bandra in Mumbai is considered to be home to several Bollywood celebrities. Known as Queen of the suburbs, the place is often reputed and recognised owing to its hip vibe to trendy craft-beers and there are certainly a dozen upscale global restaurants. There are many places to visit in Bandra that will show you a glimpse of the vibrant culture of the city. There are some magnificent cafes and some real hot bars and restaurants who have earned their name and fame for creative cocktails. The adorable and fascinating 17th century Bandra Fort is quite popular for hosting some remarkable music performances which lie at the end of the famous and finest Bandstand Promenade. One of the defining characteristics of Bandra West is its pervasive Portuguese heritage. Bandra was settled by the Portuguese in 1534 when it was a simple fishing village, and it remained part of their territory even after the Bombay Islands were transferred to the British in 1661. The lanes in the vicinity of Ranwar village have recently become renowned for their quirky street art created by artists from all over the world. Most of it can be found on and around Waroda Road, Chapel Road, and Saint Veronica Road up to Mount Carmel Church in Bandra West. The most prominent murals on Chapel Road are the work of the Bollywood Art Project. Linking Road is lined with stalls selling cheap shoes, bags, clothing, and accessories.",
+                    "images": [
+                        "images/Mumbai/places/bandra/1.webp",
+                        "images/Mumbai/places/bandra/2.webp",
+                        "images/Mumbai/places/bandra/3.jpg",
+                        "images/Mumbai/places/bandra/4.jpeg",
+                        "images/Mumbai/places/bandra/5.jpg",
+                        "images/Mumbai/places/bandra/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608025295357!6m8!1m7!1sCAoSLEFGMVFpcE5WcUpVRFZVUmV4VENLTmI1SmpMelQ1ZDJid19DM2JuUy0wOFZn!2m2!1d19.0427393!2d72.8179983!3f248.93063249600755!4f-13.274936199491194!5f0.7820865974627469"
+                },
+                {
+                    "id": 2,
+                    "name": "Churchgate",
+                    "detail": "Seaside Churchgate is known for sports grounds like the vast Oval Maidan, popular for casual games of cricket, and nearby 1930s Brabourne Stadium, which hosts formal matches. The area’s neo-Gothic and art deco buildings house offices and colleges, while restaurants range from fine Indian dining to old-world bistros serving evening tea and pastries. Crowded Churchgate railway station is a hub for suburban trains. The busy Marine Lines area is known for Wankhede Stadium's international cricket matches, and the Birla Matushree Sabhaghar auditorium, which stages traditional dance and music shows. Art deco cinemas include Metro, showing mainstream films, and Liberty, which also hosts comedy and plays. Locals head to the old-school Iranian cafe Kyani & Co. for tea and mawa cakes.",
+                    "images": [
+                        "images/Mumbai/places/churchgate/1.jpg",
+                        "images/Mumbai/places/churchgate/2.jpeg",
+                        "images/Mumbai/places/churchgate/3.jpg",
+                        "images/Mumbai/places/churchgate/4.jpg",
+                        "images/Mumbai/places/churchgate/5.jpeg",
+                        "images/Mumbai/places/churchgate/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608024793775!6m8!1m7!1sCAoSLEFGMVFpcE5mcWtXbGdlcGlYa3JRaFBMSVJ1N0Q1Uzdwb211d1JZV3dtSmlV!2m2!1d18.93490279204727!2d72.82371264546614!3f283.6609422539806!4f-10.306756082539138!5f0.7820865974627469"
+                },
+                {
+                    "id": 3,
+                    "name": "Sanjay Gandhi National Park",
+                    "detail": "Sanjay Gandhi National Park is a 87 km2 (34 sq mi) protected area in Mumbai, Maharashtra State in India. It was established in 1996 with headquarters at Borivali. It is notable as one of the major national parks existing within a metropolis limit and is one of the most visited parks in the world. The rich flora and fauna of Sanjay Gandhi National Park attracts more than 2 million visitors every year. Tourists also enjoy visiting the 2400-year-old Kanheri caves sculpted out of the rocky cliffs which lies within the park. The Sanjay Gandhi National Park area has a long written history dating back to the 4th century BCE. In ancient India, Sopara and Kalyan were two ports in the vicinity that traded with ancient civilisations such as Greece and Mesopotamia. The 45 km (28 mi) land route between these two ports was partially through this forest. The Kanheri Caves in the centre of the park were an important Buddhist learning centre and pilgrimage site sculpted by Buddhist monks between the 9th and the 1st centuries BCE. They were chiselled out of a massive basaltic rock outcropping.",
+                    "images": [
+                        "images/Mumbai/places/sgnp/1.png",
+                        "images/Mumbai/places/sgnp/2.jpg",
+                        "images/Mumbai/places/sgnp/3.jpeg",
+                        "images/Mumbai/places/sgnp/4.webp",
+                        "images/Mumbai/places/sgnp/5.jpg",
+                        "images/Mumbai/places/sgnp/6.png"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608052036873!6m8!1m7!1sCAoSLEFGMVFpcE8wQkpna0pXdGxncVpGVnNQYUFEaWthdUJDd2Q4aVhmRjlJLWpG!2m2!1d19.2283462!2d72.9138528!3f290.35490222998936!4f-3.6516348730838786!5f0.4000000000000002"
+                },
+                {
+                    "id": 4,
+                    "name": "Jehnagir Art Gallery",
+                    "detail": "The Jehangir Art Gallery was established in Kala Ghoda, Mumbai in 1952. It was founded with the help of donations given by Sir Cowasji Jehangir, 2nd Baronet in memory of his late son. B.G. Kher, the then Chief Minister of Bombay, inaugurated the gallery on the 21st of January 1952. The building is designed by Durga Bajpai, and has the distinction of being one of the earliest structures built in the city. It is situated behind the famous Prince of Wales Museum, now known as Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, in the Fort area of Mumbai. The Jehangir Art Gallery has traditionally been one of the most prominent and renowned galleries in India, exhibiting works of artists like M.F. Hussain and S.H. Raza. Other frequenters of the gallery included Akbar Padamsee, Ram Kumar, Anjolie Ela Menon and K.K. Hebbar among others. The surroundings of the gallery can be said to be steeped in rich history and tradition, especially concerning art. The gallery complex houses the Art Plaza Gallery and Natesan, India’s earliest licensed antique dealers.",
+                    "images": [
+                        "images/Mumbai/places/jag/1.jpg",
+                        "images/Mumbai/places/jag/2.jpg",
+                        "images/Mumbai/places/jag/3.jpg",
+                        "images/Mumbai/places/jag/4.jpg",
+                        "images/Mumbai/places/jag/5.jpeg",
+                        "images/Mumbai/places/jag/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608052695554!6m8!1m7!1sCAoSLEFGMVFpcE5sekw4Nk9JWmhMOEF0b1RfZXB5cjhMb2QtMGcxTXZPVlRUOG1h!2m2!1d18.927499!2d72.831689!3f180!4f0!5f0.7820865974627469"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "city": "Delhi",
+            "images": [
+                "images/Delhi/1.jpg",
+                "images/Delhi/2.jpg",
+                "images/Delhi/3.jpg",
+                "images/Delhi/4.jpg",
+                "images/Delhi/5.jpg"
+            ],
+            "description": [
+                "There are multiple reasons to visit Delhi, India’s second largest city. Delhi is made of 11 districts and New Delhi is one of the Delhi’s 11 districts and the capital city of India. Delhi was the capital of seven empires and today is one of the longest serving capital cities and top historical destinations in the world. Since the 12th century Delhi was a powerful Sultanate ruled by The Mamluk Dynasty. In the end of the 14th century Delhi Sultanate was invaded and ruined by Turco-Mongols. In the 16th century Delhi became a part of the Mughal dynasty, during which most of the greatest architectural monuments were built.",
+                "The city is also known for its best street markets in India. Indian markets are full of people, smells, colours and sounds and are definitely an experience not to be missed. The prices can be very low as soon as you learn how to bargain. Apart from traditional clothes or food markets, Delhi has some unique markets like Khari Baoli, Dilli Haat, Sundar Nagar",
+                "Indian food is one of the most delicious in the world and should be definitely one of the reasons to visit Delhi. Delhi has a huge selection of perfect restaurants along with endless street food stalls and eateries. Khan market is probably the best place to try various Indian dishes in Delhi.One of the most famous food destinations in Delhi is Karim’s restaurant. It was established in 1913 by one of the sons of a former cook who was working in the royal court of the last Mughal emperor. The restaurant became extremely popular for making food cooked according to royal recipes available to ordinary people."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1608143629272!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "India Gate",
+                    "detail": "The India Gate (formerly known as the All India War Memorial) is a war memorial located astride the Rajpath, on the eastern edge of the ceremonial axis of New Delhi, formal called Kingsway. It stands as a memorial to 70,000 soldiers of the British Indian Army who died in between 1914 and 1921 in the First World War, in France, Flanders, Mesopotamia, Persia, East Africa, Gallipoli and elsewhere in the Near and the Far East, and the third Anglo-Afghan War. 13,300 servicemen's names, including some soldiers and officers from the United Kingdom, are inscribed on the gate. Designed by Sir Edwin Lutyens, the gate evokes the architectural style of the triumphal arch such as the Arch of Constantine, in Rome, and is often compared to the Arc de Triomphe in Paris, and the Gateway of India in Mumbai. Following the Bangladesh Liberation war in 1972, a structure consisting of a black marble plinth with a reversed rifle, capped by a war helmet and bounded by four eternal flames, was built beneath the archway. This structure, called Amar Jawan Jyoti (Flame of the Immortal Soldier), has since 1971 served as India's tomb of the unknown soldier. India Gate is counted amongst the largest war memorials in India and every Republic Day, the Prime Minister visits the gate to pay their tributes to the Amar Jawan Jyoti, following which the Republic Day parade starts. The memorial-gate is also a popular spot for protests by the civil society in New Delhi.",
+                    "images": [
+                        "images/Delhi/places/ig/1.jpg",
+                        "images/Delhi/places/ig/2.webp",
+                        "images/Delhi/places/ig/3.jpeg",
+                        "images/Delhi/places/ig/4.webp",
+                        "images/Delhi/places/ig/5.jpg",
+                        "images/Delhi/places/ig/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608053043037!6m8!1m7!1sCAoSLEFGMVFpcFBxdFBFTm5rXzlYVy0wa1hMQldpbHBvdUNSbXJsM1N2dEZzODdR!2m2!1d28.6109401!2d77.234482!3f157.3299482647585!4f19.285414347048302!5f0.4000000000000002"
+                },
+                {
+                    "id": 1,
+                    "name": "Humayun's Tomb",
+                    "detail": "Humayun's tomb is the tomb of the Mughal Emperor Humayun in Delhi, India. The tomb was commissioned by Humayun's first wife and chief consort, Empress Bega Begum (also known as Haji Begum), in 1558, and designed by Mirak Mirza Ghiyas and his son, Sayyid Muhammad, Persian architects chosen by her. It was the first garden-tomb on the Indian subcontinent, and is located in Nizamuddin East, Delhi, India, close to the Dina-panah Citadel, also known as Purana Qila (Old Fort), that Humayun found in 1533. It was also the first structure to use red sandstone at such a scale. The tomb was declared a UNESCO World Heritage Site in 1993, and since then has undergone extensive restoration work, which is complete. Besides the main tomb enclosure of Humayun, several smaller monuments dot the pathway leading up to it, from the main entrance in the West, including one that even pre-dates the main tomb itself, by twenty years; it is the tomb complex of Isa Khan Niyazi, an Afghan noble in Sher Shah Suri's court of the Suri dynasty, who fought against the Mughals, constructed in 1547 CE. The complex encompasses the main tomb of the Emperor Humayun, which houses the graves of Empress Bega Begum, Hamida Begum, and also Dara Shikoh, great-great-grandson of Humayun and son of the later Emperor Shah Jahan, as well as numerous other subsequent Mughals, including Emperor Jahandar Shah, Farrukhsiyar, Rafi Ul-Darjat, Rafi Ud-Daulat, Muhammad Kam Bakhsh and Alamgir II. It represented a leap in Mughal architecture, and together with its accomplished Charbagh garden, typical of Persian gardens, but never seen before in India, it set a precedent for subsequent Mughal architecture. It is seen as a clear departure from the fairly modest mausoleum of his father, the first Mughal Emperor, Babur, called Bagh-e Babur (Gardens of Babur) in Kabul (Afghanistan). Though the latter was the first Emperor to start the tradition of being buried in a paradise garden.  Modelled on Gur-e Amir, the tomb of his ancestor and Asia's conqueror Timur in Samarkand, it created a precedent for future Mughal architecture of royal mausolea, which reached its zenith with the Taj Mahal, at Agra.",
+                    "images": [
+                        "images/Delhi/places/ht/1.webp",
+                        "images/Delhi/places/ht/2.jpeg",
+                        "images/Delhi/places/ht/3.jpg",
+                        "images/Delhi/places/ht/4.jpg",
+                        "images/Delhi/places/ht/5.jpeg",
+                        "images/Delhi/places/ht/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608053270794!6m8!1m7!1sCAoSLEFGMVFpcFBPc2dnNDh2eFhOTkZWZkJ6WlFoLVFlWW54cEM2WjA2Z3RqVEZ3!2m2!1d28.5923351!2d77.2507612!3f359.27871900359816!4f18.140840564123366!5f0.4192214065091523"
+                },
+                {
+                    "id": 2,
+                    "name": "Agra Fort",
+                    "detail": "Agra Fort is a historical fort in the city of Agra in India. It was the main residence of the emperors of the Mughal Dynasty until 1638, when the capital was shifted from Agra to Delhi. Before capture by the British, the last Indian rulers to have occupied it were the Marathas. In 1983, the Agra fort was inscribed as a UNESCO World Heritage site. It is about 2.5 km northwest of its more famous sister monument, the Taj Mahal. The fort can be more accurately described as a walled city. It had been used by the early mughal rulers. The Fort stands on an ancient site and was traditionally known as Badalgarh. sIt was captured by Ghaznavi for some time but in the 15th century A.D., the Chauhan Rajputs occupied it. Soon after, Agra assumed the status of capital when Sikandar Lodi (A.D. 1487–1517) shifted his capital from Delhi and constructed a few buildings in the pre-existing Fort at Agra. After the first battle of Panipat (A.D. 1526) Mughals captured the fort and ruled from it. In A.D. 1530, Humayun was crowned in it. The Fort got its present appearance during the reign of Akbar.",
+                    "images": [
+                        "images/Delhi/places/rf/1.jpg",
+                        "images/Delhi/places/rf/2.jpg",
+                        "images/Delhi/places/rf/3.jpg",
+                        "images/Delhi/places/rf/4.jpg",
+                        "images/Delhi/places/rf/5.jpg",
+                        "images/Delhi/places/rf/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608053437103!6m8!1m7!1sCAoSLEFGMVFpcE90M2JsWmY4Ylh5cWhZeVRaanVfMUdnRzFCNXhzdmRGRGlMXzUz!2m2!1d27.1795328!2d78.021112!3f356.22231380542536!4f13.65978400369275!5f0.4000000000000002"
+                },
+                {
+                    "id": 3,
+                    "name": "Qutb Minar",
+                    "detail": "The Qutb Minar, also spelled as Qutub Minar and Qutab Minar, is a minaret and 'victory tower' that forms part of the Qutb complex, a UNESCO World Heritage Site in the Mehrauli area of New Delhi, India. The height of Qutb Minar is 72.5 meters, making it the tallest minaret in the world built of bricks. The tower tapers, and has a 14.3 metres (47 feet) base diameter, reducing to 2.7 metres (9 feet) at the top of the peak. It contains a spiral staircase of 379 steps. Its closest comparator is the 62-metre all-brick Minaret of Jam in Afghanistan, of c.1190, a decade or so before the probable start of the Delhi tower. The surfaces of both are elaborately decorated with inscriptions and geometric patterns; in Delhi the shaft is fluted with 'superb stalactite bracketing under the balconies' at the top of each stage. In general minarets were slow to be used in India, and are often detached from the main mosque where they exist.It was built over the ruins of the Lal Kot, the citadel of Dhillika. Qutb-ud-din Aibak, a deputy of Muhammad of Ghor, who founded the Delhi Sultanate after Muhammad of Ghor's death, started construction of the Qutb Minar's first storey in 1199.",
+                    "images": [
+                        "images/Delhi/places/qb/1.jpg",
+                        "images/Delhi/places/qb/2.jpeg",
+                        "images/Delhi/places/qb/3.jpg",
+                        "images/Delhi/places/qb/4.jpg",
+                        "images/Delhi/places/qb/5.jpg",
+                        "images/Delhi/places/qb/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608053683435!6m8!1m7!1sCAoSLEFGMVFpcE1TT25zSDgzYlU1SldibWItUFZRdGpyOUJGdEVwd1p3ejRSQmk4!2m2!1d28.5251762!2d77.1852676!3f95.01516987783403!4f10.074793511087535!5f0.4000000000000002"
+                },
+                {
+                    "id": 4,
+                    "name": "Hauz Khas Village",
+                    "detail": "Hauz Khas village is a historic habitation around the region of the Hauz Khas Complex, dating to much before establishment of South Delhi city. It existed as an urban village at the edge of larger Hauz Khas area, developed by DLF after the 1960s. The village area started getting modernized in mid-1980s when designer boutiques of fashion designer like Bina Ramani, started moving in. Then, in the late 1990s restaurants started coming up in the area, today it has around 50 restaurants, bars, pubs and cafes. The success of Hauz Khas village has led to the development of Shahpur Jat and Lado Sarai as fashion and design markets also in the South Delhi area.",
+                    "images": [
+                        "images/Delhi/places/hkv/1.jpg",
+                        "images/Delhi/places/hkv/2.jpg",
+                        "images/Delhi/places/hkv/3.jpg",
+                        "images/Delhi/places/hkv/4.jpg",
+                        "images/Delhi/places/hkv/5.jpg",
+                        "images/Delhi/places/hkv/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608053909124!6m8!1m7!1sCAoSLEFGMVFpcE40SmN2UXVWdVBYV0UyMlJsSGZGZkZ6cG1tQkZVcXQzOHY4TWpR!2m2!1d28.5528315!2d77.1934236!3f11.147360351635642!4f8.971554859896301!5f0.7679885143843448"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "city": "Manali",
+            "images": [
+                "images/Manali/1.jpg",
+                "images/Manali/2.jpg",
+                "images/Manali/3.jpg",
+                "images/Manali/4.jpg",
+                "images/Manali/5.jpg"
+            ],
+            "description": [
+                "Manali is a different kind of getaway. Not a vacation destination for the unadventurous, Manali is nestled on the banks of the Beas River in the mountains of the Himalayas. It is one of the premier places in the world to backpack as well as honeymoon. It offers skiing and trekking adventures and is the launching point for many Himalayan adventures. Here are some reasons why you need to visit Manali.",
+                "About 50 kilometers from Manali, the Rohtang Pass provides one of the most breathtaking mountain views in the world. Located on the Pir Panjal Range of the Himalayas, it is snow covered from October through May, but once open it becomes a popular destination for thrill seekers and nature enthusiasts alike. You can go skiing or snow scooter riding and it is a beautiful and rare place for a family adventure.",
+                "If there’s once place in the world where you can truly mountain bike, Manali is it. Why be stuck inside a bus when you can ride through the fresh mountain air on a bike and truly take in the majestic beauty of the mountains in Manali? Along the way you can visit traditional Himalayan villages with their distinctive carved wooden houses or various temples that bring alive the history of the area."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53995.02376570998!2d77.15210003371382!3d32.239539820527305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1608012882645!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Solang Valley",
+                    "detail": "When heading to Manali for a vacation, two absolutely essential destinations in the itinerary are Rohtang and Solang Valley. 14 kilometres to the north west of the main town of Manali, Solang Valley is one of the most popular tourist destinations in Himachal Pradesh. Situated on the way to Rohtang from Manali, every year the valley welcomes tourists in huge numbers. A favourite for adventure enthusiasts, parachuting to paragliding, horse riding to driving mini-open jeeps specially available for tourists of all age groups, Solang Valley has it all. During winters, Solang valley is covered with snowmaking skiing is a popular sport here, with training institutes and trainers located in the valley to supervise skiers and train beginners. As the snow melts, skiing is taken over by zorbing. Another popular attraction of Solang valley, taking advantage of the slopes of the valley, you are likely to spot a huge transparent ball with mostly two people inside it rolling down the slope during summers. Yes, Zorbing is as much fun as it looks like. One of the most vibrant and enjoyable places in Manali, there is no way one can possibly miss this amazing valley, while here.",
+                    "images": [
+                        "images/Manali/places/sv/1.jpg",
+                        "images/Manali/places/sv/2.jpg",
+                        "images/Manali/places/sv/3.jpg",
+                        "images/Manali/places/sv/4.jpg",
+                        "images/Manali/places/sv/5.jpg",
+                        "images/Manali/places/sv/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608184310890!6m8!1m7!1sCAoSLEFGMVFpcE5qWjNwZlpsWElsTTRSMkVfYUxHdWpsZFU3Wkh6Q2sxSjh4N0VY!2m2!1d32.3060415!2d77.13277819999999!3f98.43537659955321!4f10.535679496740642!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Rohtang Pass",
+                    "detail": "Located at a distance of just 51 kilometres from Manali, Rohtang Pass can be reached only by road. The pass is located at a massive height of 3978 metres on Manali- Keylong road. When planning a trip to Manali, a day off to the vista point of Rohtang Pass is the ultimate and almost essential attraction of the itinerary. Owing to its splendid natural beauty, Rohtang Pass is a favourite among the community of film directors. Many blockbusters ranging from 'Jab We Met' to 'Yeh Jawani Hai Deewani' have been shot here. A peculiar fact behind the name of the place is that it was named so because a number of people working in CBRE died whilst trying to cross this treacherous stretch. An experience of the snow can never be complete without a sledge ride, which involves sliding through the snow in a wooden toboggan. Another thrilling activity that can be pursued at Rohtang Pass would be mountain biking where you ride your mountain bikes off the regular course and into the lesser taken routes. It can get a bit rough, so you must take care in case you are planning on pursuing this activity. You can try your hand at skiing and tyre drop at the Rohtang Pass as well, where again you slide down a slope of snow whilst using the appropriate equipment. Gear for all of these activities is available for reasonable rent, so do not miss out on this opportunity.",
+                    "images": [
+                        "images/Manali/places/rp/1.jpg",
+                        "images/Manali/places/rp/2.jpg",
+                        "images/Manali/places/rp/3.jpg",
+                        "images/Manali/places/rp/4.jpg",
+                        "images/Manali/places/rp/5.jpg",
+                        "images/Manali/places/rp/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095372092!6m8!1m7!1sCAoSK0FGMVFpcE9qQ1QydFY0LUg0RVUtdDQ3cUFIYnZIdGU0Y0FCemZZR1RjbWs.!2m2!1d32.3685397!2d77.25066079999999!3f248.20020071621911!4f8.831213021994131!5f1.4672839191200615"
+                },
+                {
+                    "id": 2,
+                    "name": "Hadimba Temple",
+                    "detail": "Located amidst the snow-covered hills of Manali, the Hadimba Temple is a unique shrine dedicated to Hidimba Devi, who was the wife of Bhima and mother of Ghatothkach. Surrounded by gorgeous cedar forests, this beautiful shrine is built on a rock which is believed to be in the image of goddess Hidimba herself. Locally known as Dhungari Temple, the construction style of the Hidimba Devi temple is entirely different from that of any of the other temples, with its wooden doorways, walls, and cone-shaped roof. This temple is a fitting dedication to its presiding deity Hadimba.",
+                    "images": [
+                        "images/Manali/places/hdt/1.jpg",
+                        "images/Manali/places/hdt/2.webp",
+                        "images/Manali/places/hdt/3.jpg",
+                        "images/Manali/places/hdt/4.webp",
+                        "images/Manali/places/hdt/5.webp",
+                        "images/Manali/places/hdt/6.webp"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095416841!6m8!1m7!1sCAoSLEFGMVFpcE5yc010YzNYRVZMTGVRcENyazNBSkltUTkzWGpabXNqQmxBWENp!2m2!1d32.2482288!2d77.1808477!3f7.228296!4f8.440510000000003!5f0.7820865974627469"
+                },
+                {
+                    "id": 3,
+                    "name": "Old Manali",
+                    "detail": "Located 6589 feet above sea level and 3 km uphill from Manali, Himachal Pradesh, lies the town of Old Manali, a quiet settlement that lays beneath a valley with a vast coverage of apple orchards. Manali is divided into Old Manali and New Manali by the Manalsu River. Old Manali is led by a bridge over the river. In comparison to New Manali, it is cleaner and less crowded, thereby inducing a lot of travellers to visit this place more often than New Manali. The serenity of Old Manali is perhaps unique. The swaying eucalyptus, gently winding roads, gushing waters of the Kullu river and beautiful hills of this destination make it the perfect natural retreat. Indulge in some delicious continental food at low prices here, and shop for knick-knacks from the local markets here. The sunrise and sunsets here are intoxicating, and you will surely love the energy of this place. Old Manali is most famous for its Hidimba temple. Tucked away in the lap of quiet nature, this destination is the perfect place to experience the pure beauty of Himachal Pradesh.",
+                    "images": [
+                        "images/Manali/places/om/1.webp",
+                        "images/Manali/places/om/2.webp",
+                        "images/Manali/places/om/3.webp",
+                        "images/Manali/places/om/4.webp",
+                        "images/Manali/places/om/5.jpg",
+                        "images/Manali/places/om/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095465361!6m8!1m7!1sCAoSLEFGMVFpcE82VGlfZ09uRktJNXFrRlJPLWFRcWJsRHBoWXVDZmdmSW4zWFlS!2m2!1d32.2538986!2d77.18281689999999!3f190.20976530889084!4f14.09668553423785!5f0.4000000000000002"
+                },
+                {
+                    "id": 4,
+                    "name": "Manu Temple",
+                    "detail": "",
+                    "images": [
+                        "images/Manali/places/mt/1.jpg",
+                        "images/Manali/places/mt/2.jpg",
+                        "images/Manali/places/mt/3.jpg",
+                        "images/Manali/places/mt/4.jpg",
+                        "images/Manali/places/mt/5.jpg",
+                        "images/Manali/places/mt/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095529539!6m8!1m7!1sCAoSLEFGMVFpcE9WeGkyV2d0eXl1anhMSkRwUUQydkVWQlVnQWRhamdPcHc1UEND!2m2!1d32.2569888!2d77.1759692!3f32.71704!4f18.006429999999995!5f0.7820865974627469"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "city": "Bangalore",
+            "images": [
+                "images/Bangalore/1.jpg",
+                "images/Bangalore/2.png",
+                "images/Bangalore/3.jpg",
+                "images/Bangalore/4.jpg",
+                "images/Bangalore/5.jpg"
+            ],
+            "description": [
+                "Bengaluru, also known as Bangalore, is the capital of India’s southern Karnataka state. The nerve centre of India’s high-tech industry, the city is also notable for its abundant green parks. Known both as India’s Garden City and its Silicon Valley, this cosmopolitan city beguiles with its blend of rich history and 21st-century buzz. While the old palaces and forts bear testimony to Bengaluru’s cultural stronghold, new destinations such as Four Seasons Hotel Bengaluru, with its modern outlook and design, ring in the new. The city is certainly at a cross-road and these are our top 10 reasons to visit this prize destination in Southern India.",
+                "Name a cuisine and you will find it in Bengaluru, from modern and exotic to traditional South Indian flavours. Choose from crisp dosas or perfect pizzas, sushi to street food. The bustling gastronomy of the city is sure to leave you delighted. Food trails in the old parts of the city such as Malleswaram and Basavangudi are reminiscent of yester years. Follow these trails with a steaming cup of frothy South Indian filter coffee at Brahmin’s Café.",
+                "Spanking new high rises dot Bengaluru’s skyline showcasing the best in modern architectural design juxtaposed with heritage buildings such as the Bangalore Palace and Vidhana Soudha. If art and design is your thing, then Bengaluru should be on your list of must visit destinations. Palaces like Tipu Sultan’s Summer Palace and Bangalore Fort stand as testimony to the cultural heartbeat of the city."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.6600546224!2d77.35072615606268!3d12.954517021284152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1608012804939!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Bangalore Palace",
+                    "detail": "An epitome of great architecture and beauty, The Majestic Bangalore Palace preserves in it the spice of old regal opulence. Currently the central attraction in Bangalore, the palace was built in the year 1878. Chamarajendra Wadiyar's British Guardians bought the original property in 1873 from the principal of Bangalore Central High School, Rev, J Garret, from his funds. The palace is extraordinarily vast and spread across 45,000 square feet. A mixture of Tudor and Scottish Gothic architecture have resulted into the grand palace that we see today.The wooden structure of the palace along with the beautiful carvings both inside and outside showcases the royal culture in different ways. Apart from being a major tourist destination, the palace is a host to different cultural events, rock shows, and marriages. As per beliefs, King Chamarajendra Wadiyar drew his inspiration for building the palace from the Windsor Castle of London. The granite seats decorated with fluorescent blue ceramic tiles on the ground floor, a fairy tale Ballroom, the famous painter Raja Ravi Varma's paintings, vine-covered walls, and the Durbar Hall on the first floor come together to form the prepossessing Bangalore Palace.",
+                    "images": [
+                        "images/Bangalore/places/bp/1.jpg",
+                        "images/Bangalore/places/bp/2.jpg",
+                        "images/Bangalore/places/bp/3.jpg",
+                        "images/Bangalore/places/bp/4.jpg",
+                        "images/Bangalore/places/bp/5.jpg",
+                        "images/Bangalore/places/bp/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095605817!6m8!1m7!1sCAoSLEFGMVFpcE10OUQ1SFVhb1FfMzFjTkFKekF2bXB2UGhNRFJtZUwzdTZtSXg0!2m2!1d12.998766!2d77.59210709999999!3f226.74139611199183!4f-9.203365720737239!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Cubbon Park",
+                    "detail": "",
+                    "images": [
+                        "images/Bangalore/places/cp/1.jpg",
+                        "images/Bangalore/places/cp/2.jpg",
+                        "images/Bangalore/places/cp/3.png",
+                        "images/Bangalore/places/cp/4.jpg",
+                        "images/Bangalore/places/cp/5.jpg",
+                        "images/Bangalore/places/cp/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095796412!6m8!1m7!1sCAoSLEFGMVFpcE9oWUtMVlBYalFIbzVkdFZ6SE85czhoeWYwdEZ3UGx3N1ZaYmJ5!2m2!1d12.97498549817992!2d77.59266338853546!3f350.62007667821064!4f10.430179277713052!5f0.4000000000000002"
+                },
+                {
+                    "id": 2,
+                    "name": "Lal Bagh Botanical Garden",
+                    "detail": "Lalbagh Botanical Garden is located in Bangalore and is nationally and internationally renowned centre for botanical artwork, scientific study of plants and also conservation of plants. A haven for all nature lovers, Lal Bagh covers an area 240 acres in the heart of the city and has nearly 1,854 species of plants. It was commissioned by Hyder Ali in 1760 and completed by his son Tipu Sultan. The garden features rare plants of French, Persian and Afghani origin and has attained the status of a Government Botanical Garden. The Lal Bagh Rock which is over 3000 million years old is found here and is a major tourist attraction. This botanical garden, a delight for photographers, also consists of the famous glass house where an annual flower show is held every year and is also a home to an aquarium and a lake. Tipu Sultan brought in imported trees and plants from countries all over the world and planted them here and today, Lalbagh Botanical Garden has one of the world's largest collection of rare plants. In addition to being rich in foliage, this garden also houses a number of birds such as Myna, Parakeets, Crows, Brahminy Kite, Pond Heron, Common Egret and Purple Moor Hen.",
+                    "images": [
+                        "images/Bangalore/places/lb/1.jpg",
+                        "images/Bangalore/places/lb/2.jpeg",
+                        "images/Bangalore/places/lb/3.jpeg",
+                        "images/Bangalore/places/lb/4.jpeg",
+                        "images/Bangalore/places/lb/5.png",
+                        "images/Bangalore/places/lb/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608095883819!6m8!1m7!1sCAoSLEFGMVFpcE5rRDNUTjBlZkprbXEtek1FaUJvbkhWN0dFR1BCaVlVVEFhajgx!2m2!1d12.94967419101393!2d77.58681915700436!3f121.23513093456478!4f-17.098240026036862!5f0.7820865974627469"
+                },
+                {
+                    "id": 3,
+                    "name": "Wonderla Waterpark",
+                    "detail": "Wonderla Waterpark in Bangalore is beyond doubt, the best waterpark in the city. It is a haven for those seeking an escape from the mundane boredom of everyday life and offers a series of rides that will make your adrenaline go berserk. It is renowned for its high thrill rides, but there are other relaxing booths that attract people of all ages thus making it an all-encompassing place.  It is located on the outskirts of Bangalore, so if you are a temporary wanderer there, then reaching the place may be tricky but not impossible.  In fact, the connectivity in Bangalore has made it all the more easy to reach.  The water park/ amusement park features over 60 exhilarating rides for kids aged five years old to adults over 70 years old.  One of its recently constructed rides, the ‘Reverse Looping Roller Coaster’ – a roller coaster that can be ridden in both directions, once straight and then reverse, has left adrenaline junkies thrilled. The wave pool is built with hi-tech devices that give you the feeling of standing in the middle of an ocean with smooth waves around you; the rain disco is an always-raining discotheque with hit songs playing in the background so that you can dance too and what not!",
+                    "images": [
+                        "images/Bangalore/places/wonderla/1.jpeg",
+                        "images/Bangalore/places/wonderla/2.jpeg",
+                        "images/Bangalore/places/wonderla/3.jpeg",
+                        "images/Bangalore/places/wonderla/4.jpeg",
+                        "images/Bangalore/places/wonderla/5.jpg",
+                        "images/Bangalore/places/wonderla/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608121917023!6m8!1m7!1sCAoSLEFGMVFpcE9yb2EwRjJVVXE2WFNSdk9pTFVreGlvX0s3V19OOEEwV25vNEQt!2m2!1d12.8345559!2d77.4009719!3f40!4f20!5f0.7820865974627469"
+                },
+                {
+                    "id": 4,
+                    "name": "Nandi Hills",
+                    "detail": "Residents of Bangalore have discovered the picturesque natural beauty of a hill fortress that is located quite close to the main city. Nandi Hills, a small albeit beautiful town, is just 60 km away from the city of Bangalore and has emerged as the perfect weekend getaway for its people. Even though it is most well-known for its viewpoints and its greenery, Nandi Hills is also a popular historical fortress that is home to a number of temples, monuments and shrines. The place was previously used by the famous ruler Tipu Sultan as a summer retreat, and several traces of the Sultan’s life and legacy can be found in the area. His summer residence can still be found in Nandi Hills. The house was called Tashk-e-Jannat, whose painted walls, intricate archways, high pillars and artfully crafted ceilings attract tourists and visitors even today. Nandi Hills is also home to some famous temples and shrines such as the Bhoga Nandeeshwara Temple, dedicated to Lord Shiva and his companions- Parvati and Nandi. This temple is also an architectural wonder and pilgrimage spot because it is one of the oldest temples in the area. Apart from its historical sites and heritage monuments, Nandi Hills is also famous for its trekking trails, cycling routes and adventure sports such as paragliding. It is truly the perfect place to enjoy a peaceful retreat from life in the city and take in some of the best views the countryside has to offer.",
+                    "images": [
+                        "images/Bangalore/places/nh/1.jpg",
+                        "images/Bangalore/places/nh/2.jpg",
+                        "images/Bangalore/places/nh/3.jpg",
+                        "images/Bangalore/places/nh/4.jpg",
+                        "images/Bangalore/places/nh/5.jpg",
+                        "images/Bangalore/places/nh/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608096437081!6m8!1m7!1sCAoSLEFGMVFpcFA4b1NUblU0VjFXSWUxY1p1X3BLTFpFbVZ1WmtzNENCc0I5MHJn!2m2!1d13.3681381!2d77.68321689999999!3f207.78105559506608!4f1.1671969502350663!5f1.0867415445204662"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "city": "Lucknow",
+            "images": [
+                "images/Lucknow/1.jpg",
+                "images/Lucknow/2.jpg",
+                "images/Lucknow/3.jpeg",
+                "images/Lucknow/4.jpg",
+                "images/Lucknow/5.jpg"
+            ],
+            "description": [
+                "Lucknow is a city of architectural wonders. Not just for its own brilliance, but also styles that it borrows from all over the world, be it Turkey or Britain. On one of the major roads is the wonderfully imposing Rumi Darwaza, practically a logo for the city of Lucknow. Modelled after a gate in Istanbul (then known as Constantinople) in the 1780s (yes, it’s that old!), it’s sometimes also known as the Turkish Gateway.",
+                "The term “Indian food” encompasses an entire array of cuisines, and being a regular at The Roti Prata House doesn’t give you any bragging rights when it comes to the much celebrated food of this country. North Indian cuisine in general involves a lot of yogurt – think thicker, decadent curries and dishes – and a preference for breads like naan and paratha as staples, as opposed to South Indian cuisine, which is keener on the use of coconut in cooking as well as more rice-based items. Mughlai and Awadhi cuisines originated from Lucknow and are key subsets in the palette of North Indian food. Given how much the people of Lucknow pride themselves as great connoisseurs of food, that must be saying something!",
+                "Don’t leave the city without shopping for some souvenirs. Lucknow is famous for its exquisite Chikankari embroidery work, which is well-known all over India. This 400-year-old art was born in Lucknow and is still practiced today only here.Find yourself a classic Chikan kurta (traditional men’s collarless shirt) or saree (traditional women’s draped garment) in Hazratganj, the city’s main shopping district. One of the favourite destinations for tourists and locals alike, there aren’t any glittering malls and multiplexes, but its almost Victorian vibes gives it a distinctive draw of its own. Alternatively, hit up Chowk Market in the old town – with over 5000 shops in this market, you’d probably find yourself spending the better part of the day here!"
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227821.9337568577!2d80.8024228408653!3d26.848929333557717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1608012713747!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Bara Imambara",
+                    "detail": "Lucknow, the capital of the north Indian state of Uttar Pradesh is a modern city that can boast of having magnificent historical monuments. Situated at the banks of river Gomti, tributary of the Ganga, Lucknow is known for its gardens, parks and unique archaeological monuments. Famous as the city of Nawabs, Lucknow has retained its charm as a bastion of culinary and cultural delights. The people of this city are known for their exquisite charm, courtesy and flair of the Urdu language. Lucknow is also famous for its exclusive 'chikan' embroidered dress materials. The city is home to 'Bara Imambara', a historical edifice with such a marvellous architecture that even modern architects seem to be perplexed by its design. The Imambara was built by Nawab Asaf-ud-Daula in 1784 and its designer was Kifayat-ullah who is said to be a relative of the architect of the Taj Mahal. Built by the Nawab in a famine relief programme, this fort like huge and elegant structure is also called Asafai Imambara. The structure shows the mixture of Rajput and Mughal architectures with Gothic influences. The Bara Imambara is an interesting building. It is neither a mosque, nor a mausoleum, but a huge building having interesting elements within it. The construction of the halls and the use of vaults show a strong Islamic influence.",
+                    "images": [
+                        "images/Lucknow/places/bi/1.jpg",
+                        "images/Lucknow/places/bi/2.jpeg",
+                        "images/Lucknow/places/bi/3.jpg",
+                        "images/Lucknow/places/bi/4.jpg",
+                        "images/Lucknow/places/bi/5.jpg",
+                        "images/Lucknow/places/bi/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608092053146!6m8!1m7!1sCAoSLEFGMVFpcE5sTEV2VGhtZEhFTUlzVGZSbEZBSXgwUXprWnZzUUVEVG9qai1n!2m2!1d26.8689349!2d80.9126953!3f131.07153161104992!4f3.61520480754902!5f0.4000000000000002"
+                },
+                {
+                    "id": 1,
+                    "name": "Chota Imambara",
+                    "detail": "Chota Imambara is located around 2 km from the famous Bara Imambara. It is on Husanabad Road in Daulatganj in Lucknow. An imambara is basically a congregation hall for Shia Muslims. Imambaras are also called ashurkhana, imambaragah or hussainia where religious ceremonies (mainly Muharram observances) happen. Imambara is not exactly a mosque and weekly Friday prayers might not take place in some imambaras. Chota Imambara is an imambara which was built by Nawab Muhammad Ali Shah in 1838. It is one of the beautiful historical monuments in the city of Lucknow. Chota Imambara, which is also named as Imambara Husainabad Mubarak, also has the mausoleum of Muhammad Ali Shah and his mother.",
+                    "images": [
+                        "images/Lucknow/places/ci/1.jpg",
+                        "images/Lucknow/places/ci/2.jpg",
+                        "images/Lucknow/places/ci/3.webp",
+                        "images/Lucknow/places/ci/4.webp",
+                        "images/Lucknow/places/ci/5.webp",
+                        "images/Lucknow/places/ci/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608092125292!6m8!1m7!1sCAoSLEFGMVFpcE5VdUFwX3l1bU1SaFBrRzc3R0FUSUgzYkExY2prVjJHQi1wSFlo!2m2!1d26.8743042!2d80.9046973!3f109.86305085359437!4f6.757741968119959!5f0.4000000000000002"
+                },
+                {
+                    "id": 2,
+                    "name": "British Residency",
+                    "detail": "The Residency, also called as the British Residency and Residency Complex, is a group of several buildings in a common precinct in the city of Lucknow, Uttar Pradesh, India. It served as the residence for the British Resident General who was a representative in the court of the Nawab. The Residency is located in the heart of the city, in the vicinity of other monuments like Shaheed Smarak, Tehri Kothi and High Court Building.It was constructed during the rule of Nawab Saadat Ali Khan II, who was the fifth Nawab of the province of Awadh (British spelling Oudh). Construction took place between 1780 and 1800 AD. Between 1 July 1857 and 17 November 1857 the Residency was subject to the Siege of Lucknow, part of the Indian Rebellion of 1857. The Residency now exists as ruins.",
+                    "images": [
+                        "images/Lucknow/places/br/1.jpg",
+                        "images/Lucknow/places/br/2.jpg",
+                        "images/Lucknow/places/br/3.jpg",
+                        "images/Lucknow/places/br/4.jpg",
+                        "images/Lucknow/places/br/5.jpg",
+                        "images/Lucknow/places/br/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608092186892!6m8!1m7!1sCAoSLEFGMVFpcFA1N05iZXJXMkl2ekFlcmJrNDd5MXpCVFVRd0o1Qkg5X3BidFJq!2m2!1d26.8606372!2d80.9267863!3f100!4f0!5f0.7820865974627469"
+                },
+                {
+                    "id": 3,
+                    "name": "Rumi Darwaza",
+                    "detail": "",
+                    "images": [
+                        "images/Lucknow/places/rd/1.jpg",
+                        "images/Lucknow/places/rd/2.jpg",
+                        "images/Lucknow/places/rd/3.jpg",
+                        "images/Lucknow/places/rd/4.jpg",
+                        "images/Lucknow/places/rd/5.jpg",
+                        "images/Lucknow/places/rd/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608092323631!6m8!1m7!1sCAoSLEFGMVFpcE96MXAwN0VvSklwSEgxaWREVVN2dXJoZEE2dUZpVm9qR0VvVV9J!2m2!1d26.87127397263322!2d80.91211292892694!3f36.24787601766474!4f16.92681622890592!5f0.4000000000000002"
+                },
+                {
+                    "id": 5,
+                    "name": "Hazratganj Market",
+                    "detail": "Hazratganj got its name in 1842, and is popularly known as ‘Ganj’. After the First War of Independence in 1857, the British took over the city of Lucknow and Hazratganj was modeled after Queen Street in London. In 2010, after nearly 200 years, Hazratganj received a makeover. Buildings were painted in a uniform color, and stone pavements and Victorian style balustrades were constructed to enhance the architecture. At Hazratganj, you can find a variety of Chikan work at numerous stores in the Janpath Market. Hazratganj is also the hub for various other handicrafts and handmade objects. To name but a few, Kashmir Government Arts Emporium and Gandhi Ashram deserve a visit from handicraft connoisseurs.",
+                    "images": [
+                        "images/Lucknow/places/hm/1.jpg",
+                        "images/Lucknow/places/hm/2.jpg",
+                        "images/Lucknow/places/hm/3.jpg",
+                        "images/Lucknow/places/hm/4.jpg",
+                        "images/Lucknow/places/hm/5.jpg",
+                        "images/Lucknow/places/hm/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608092475483!6m8!1m7!1sCAoSLEFGMVFpcE5IRlNNM19aelZSYkRjMVV2MjEzWFdxS3hHLXQ1aUV4bEtGOUlD!2m2!1d26.85816482648909!2d80.9462159483171!3f1.9124631303119048!4f19.25858972314974!5f0.7820865974627469"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "city": "Kanpur",
+            "images": [
+                "images/Kanpur/1.jpg",
+                "images/Kanpur/2.jpg",
+                "images/Kanpur/3.jpg",
+                "images/Kanpur/4.jpg",
+                "images/Kanpur/5.jpg"
+            ],
+            "description": [
+                "Kanpur is one of the most beautiful cities in India, situated on the banks of the sacred river Ganga. Thousands of tourists visit Kanpur every year to experience the splendor of the one-of-a-kind historical and religious sites located here. We’ve collated the top sights to explore and activities to try in this gorgeous city.",
+                "Kanpur's major park has a fascinating history, and one which illuminates the nation's past like few other locations. After the 'Indian Mutiny' of 1857, the British turned it into a memorial to British civilians who died in the uprising. When India gained independence, it became a memorial to the far greater number of Indians executed in the park by the British as punishment for the revolt. These days, the park is full of statues of independence icons and is a relaxing place to spend time.",
+                "Possibly Kanpur's most engaging suburb, Jajmau is situated a short distance southeast of the city center, on the banks of the Ganges. Its claim to fame is simple. For thousands of years, craftsmen in the area have been master leatherworkers, creating all kinds of clothing, armor, furnishings and more. If you want to pick up some recent products, head to Lal Bungla, the suburb's commercial hub, but it's worth exploring the whole area. From the twin temples of Siddhnath and Siddha Devi, to the digs at ancient Siddhapuri and the mausoleum of Sufi saint Makhdoom Shah Ala-ul-Haq, there's plenty to see."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228624.50901460962!2d80.19829279517373!3d26.447412830119703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1608012668349!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Blue World Theme Park",
+                    "detail": "Situated on Mandhana-Bithoor Road, the Blue World Theme Park is a fantastic water and amusement park with tons of rides. The rides have been thematically divided into the following – European, Fairy Land Theme, Chinese Theme, Jungle Theme, Mayan and Egyptian Culture and Indian themes. Spread across 25 acres of land containing a Water Park and an Amusement Park, Blue World Theme Park also cites multiple restaurants inclusive of all ranges of budget and culinary authenticity. There are also musical fountains, laser shows and an exciting 7D show as well. The park also offers a dedicated space for special occasions like birthdays or social gatherings. The water park also offers refundable rental swimwear.",
+                    "images": [
+                        "images/Kanpur/places/bwt/1.jpg",
+                        "images/Kanpur/places/bwt/2.jpg",
+                        "images/Kanpur/places/bwt/3.jpg",
+                        "images/Kanpur/places/bwt/4.jpg",
+                        "images/Kanpur/places/bwt/5.jpg",
+                        "images/Kanpur/places/bwt/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608096681535!6m8!1m7!1sCAoSLEFGMVFpcE1STktqMXFPQU43OERrOVl3X0RNQjluNlBGUlpWOG5UbmdTMlc4!2m2!1d26.57085774898695!2d80.23818460235998!3f308.6825640052346!4f9.377240045031755!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Nana Rao Park",
+                    "detail": "Nana Rao Park is a vast public garden centrally located on Mall Road in Kanpur. This beautiful garden is the ideal spot for nature lovers, famous for its lush greenery, particularly evergreen trees and bright-coloured flower beds. The garden adorns water-fountains and life-size statues in historical honor of personalities including Tatya Tope, Rani Lakshmi Bai, Lala Lajpat Rai and Ajizan Bai. The park features a historic banyan tree called “Boodha Bargad”, symbolising freedom from the English colonisers. There is also a public swimming pool, Vyayamshala (standard fitness facility), and a carefully maintained plant nursery. As a result, visitors approach the park for leisure purposes such as spending time with family and friends, brisk walking, yoga, badminton, swimming and bird-watching.",
+                    "images": [
+                        "images/Kanpur/places/nrp/1.jpg",
+                        "images/Kanpur/places/nrp/2.jpg",
+                        "images/Kanpur/places/nrp/3.jpg",
+                        "images/Kanpur/places/nrp/4.jpg",
+                        "images/Kanpur/places/nrp/5.jpg",
+                        "images/Kanpur/places/nrp/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608096853715!6m8!1m7!1sCAoSLEFGMVFpcE5iX0dINHFrd25OdGl0VFlORkhHZ0s5c0VjZ2RLXzl6YmMxVC1u!2m2!1d26.4719162!2d80.3595612!3f260!4f0!5f0.7820865974627469"
+                },
+                {
+                    "id": 2,
+                    "name": "J K Temple",
+                    "detail": "",
+                    "images": [
+                        "images/Kanpur/places/jkt/1.jpg",
+                        "images/Kanpur/places/jkt/2.jpg",
+                        "images/Kanpur/places/jkt/3.jpg",
+                        "images/Kanpur/places/jkt/4.jpeg",
+                        "images/Kanpur/places/jkt/5.jpg",
+                        "images/Kanpur/places/jkt/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608096960452!6m8!1m7!1sCAoSLEFGMVFpcE9pbVBYUmdqVTdaanVldWF1ZE1YSU1FeGw5dzZBbzM1YksyQktE!2m2!1d26.4735791!2d80.305173!3f24.523289536953854!4f10.113091227104817!5f1.077384291643082"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "city": "Kolkata",
+            "images": [
+                "images/Kolkata/1.jpg",
+                "images/Kolkata/2.jpg",
+                "images/Kolkata/3.jpg",
+                "images/Kolkata/4.jpg",
+                "images/Kolkata/5.jpg"
+            ],
+            "description": [
+                "Having served as the capital of British India for more than a century, Kolkata is rich with historical significance. It was home to the headquarters of the British East India Company and later became the capital of British territories in the subcontinent during the British Raj. The city’s architecture and culture are rich with traces from this era.",
+                "Kolkata has some of India’s most vibrant and historic markets. From one of Asia’s largest flower markets at Mallik Ghat to one of the world’s largest used-book markets at College Street, Kolkata’s bustling bazaars will delight anyone with its sheer range of essential and eccentric items for a bargain.",
+                "From the stunning colonial-era Victoria Memorial to the ever-busy Howrah Bridge, Kolkata’s architecture will no doubt impress. With a variety of historic churches, synagogues, temples, old mansions and colonial buildings, Kolkata’s structures pull off old-world charm unlike few other cities can."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942437.4424102978!2d87.76918751498594!3d22.67628809184849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1608012617763!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Victoria Memorial",
+                    "detail": "Another relic of the British Raj in India, the Victoria Memorial is located in the heart of Kolkata, in West Bengal. This white marbled opulent structure was built in memory of Queen Victoria to celebrate her 25 years of rule over India and is almost a replica of the Victoria Memorial in London. Victoria Memorial is an iconic structure that is synonymous with the city of joy! The memorial is surrounded by a lush green and well-maintained garden, which spreads over 64 acres and has numerous statues and sculptures in it. A sixteen-foot tall bronze statue of victory, mounted on ball bearings at the top of the memorial, serves to heighten the overall appeal and grandeur of the entire complex. Victoria Memorial is breathtaking and marvellous, especially at night, when it is illuminated. The Sound and Light shows that take place in the evening are an added delight, and a must watch. All in all, the place is a must visit for people to wish to relive the essence of the Victorian era in the modern day world.",
+                    "images": [
+                        "images/Kolkata/places/vm/1.jpg",
+                        "images/Kolkata/places/vm/2.jpg",
+                        "images/Kolkata/places/vm/3.webp",
+                        "images/Kolkata/places/vm/4.webp",
+                        "images/Kolkata/places/vm/5.jpg",
+                        "images/Kolkata/places/vm/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122662251!6m8!1m7!1sCAoSLEFGMVFpcE56OFh4NlViSWNWc0hTUFdBUHFrMUtCLXB1cXVSdU1JeVJ5VmRt!2m2!1d22.5443421!2d88.3437604!3f5.620108820547948!4f22.831702054794548!5f0.4000000000000002"
+                },
+                {
+                    "id": 1,
+                    "name": "Howrah Bridge",
+                    "detail": "An iconic landmark of Kolkata, Howrah Bridge is a massive steel bridge constructed over the Hooghly River. It is considered to be among the longest cantilever bridges in the world. Also known as Rabindra Setu, it connects Howrah and Kolkata. It carries daily traffic of over 100,000 vehicles and countless pedestrians and is as historic as it is grand. The opulence of the bridge, however, comes alive in the night time as it is all lit up. You can also take a ferry ride as it runs between Kolkata and Howrah, from the launch ghat. The view of the city from the ferry, especially in the night, is priceless, to say the least. Howrah Bridge was the third-longest cantilever bridge at the time of its construction, but now it is the sixth-longest one of its types. It was renamed as Rabindra Setu on June 14, 1965, after the name of Nobel Laureate Rabindranath Tagore. It spreads about 1500 ft over the Hooghly River and is 71 ft wide. There is a total of 8 lanes of strand road, bicycles, and pedestrians. What makes this bridge unique is the fact that it was built without a single nut or bolt and is held together by rivets.",
+                    "images": [
+                        "images/Kolkata/places/hb/1.jpg",
+                        "images/Kolkata/places/hb/2.jpg",
+                        "images/Kolkata/places/hb/3.webp",
+                        "images/Kolkata/places/hb/4.jpg",
+                        "images/Kolkata/places/hb/5.jpg",
+                        "images/Kolkata/places/hb/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122727772!6m8!1m7!1sCAoSLEFGMVFpcE5nbFlsRE95cDZCZE9pWFd2VUlaM2tJdVdUT29DZ2prWS1GdC1T!2m2!1d22.5851477!2d88.34680530000001!3f208.05928144887525!4f23.900061739756907!5f0.4000000000000002"
+                },
+                {
+                    "id": 2,
+                    "name": "Belur Math",
+                    "detail": "Belur Math in Kolkata is the headquarters of the Ramakrishna Math and Mission. Sprawling over forty acres of land on the west bank of the Hooghly River, it is visited by people from all over the world, irrespective of their religious beliefs. The temple is known for its distinctive architecture, which fuses Hindu, Christian and Islamic motifs as a symbol of unity of all religions. Founded by Swami Vivekananda, the chief disciple of Ramakrishna Paramahansa, the temple is at the heart of the Ramakrishna Movement. The temple complex also houses a museum and several other affiliated educational institutions. The evening Aarti takes place 5:30 PM, at which an evening bell is rung to indicate that visitors are not allowed to loiter on the Math grounds and are also not allowed to visit any temple other than Sri Ramakrishna temple. The Aarti songs sung are hymns of praise to Sri Ramakrishna and Sri Sarada Devi. The Aarti here is different from those at other places of worship since one is expected just to sit and meditate. There is no religious offering made. Flowers and sweets are not offered.",
+                    "images": [
+                        "images/Kolkata/places/bm/1.jpg",
+                        "images/Kolkata/places/bm/2.jpg",
+                        "images/Kolkata/places/bm/3.webp",
+                        "images/Kolkata/places/bm/4.webp",
+                        "images/Kolkata/places/bm/5.webp",
+                        "images/Kolkata/places/bm/6.webp"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122784421!6m8!1m7!1sCAoSLEFGMVFpcE9mRDFXT3VNWHZidEItMFRyTnR0TlNPTlk3bzVmdkhjYzA0NkJY!2m2!1d22.6319495!2d88.3565673!3f344.9531!4f21.838645999999997!5f0.7820865974627469"
+                },
+                {
+                    "id": 3,
+                    "name": "Birla Planetarirum",
+                    "detail": "Situated at the famous Chowringhee Road right in the proximity of Victoria Memorial and St. Paul's Cathedral Birla planetarium is the largest planetarium in Asia and the second largest in the world! Situated in the city of joy - Kolkata, Birla Planetarium is a magnificent edifice set up by Pandit Jawaharlal Nehru on 2nd July 1963. It is one of the three planetariums present in India. Also known as Taramandal, the Birla Planetarium regularly holds many shows and programs are in various languages including Hindi, English, Bengali, and other regional languages. In addition to being a planetarium, Birla Planetarium also has an electronics laboratory and an astronomy gallery that has a collection of paintings and astronomical models. A visit to the Birla Planetarium is an exciting way to ignite your interest in science and the motion of planets. People, especially astronomy lovers, arrive from all over the world to experience the amazing shows organized here. A trip here includes a tour of the planets, where interesting details about them and the other fascinating celestial bodies present in our universe are discussed. Silence rings loud while the show goes on, which in itself is a testament to the mesmerising effect of the shows here. Pictures of famous astronauts and other celestial bodies are put on display in the hallway. One can have a look at them after attending the show.",
+                    "images": [
+                        "images/Kolkata/places/mpbp/1.jpg",
+                        "images/Kolkata/places/mpbp/2.jpg",
+                        "images/Kolkata/places/mpbp/3.jpg",
+                        "images/Kolkata/places/mpbp/4.png",
+                        "images/Kolkata/places/mpbp/5.jpg",
+                        "images/Kolkata/places/mpbp/6.png"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122852721!6m8!1m7!1sCAoSLEFGMVFpcFBOa0FNQlJvVzRmSEFCcGFnRTF6WjZCbzdzal9YdFhRLVFsZWpi!2m2!1d22.545396!2d88.34799!3f212.99152651244287!4f18.745528941482533!5f0.4000000000000002"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "city": "Chennai",
+            "images": [
+                "images/Chennai/1.png",
+                "images/Chennai/2.jpg",
+                "images/Chennai/3.jpeg",
+                "images/Chennai/4.jpg",
+                "images/Chennai/5.jpg"
+            ],
+            "description": [
+                "Chennai is a city that truly epitomizes India’s penchant for the unfamiliar and unusual. And while it has no dearth of conventional tourist attractions, it is also home to some really off-the-track ones that you won’t find anywhere else. From haunted towns and places where miracles have occurred to remnants of an intriguing past, here are some of the most unusual destinations in Chennai that are sure to surprise you.",
+                "These obscure caves at Little Mount might not look like much at first sight but they are steeped in history and tradition. According to legends, St. Thomas (one of Christ’s 12 apostles) stayed in these caves for several years, living a frugal life and evangelizing the locals. The cave is still well-preserved and features a small shrine that is used by locals as a gathering spot for offering prayers. It is also said that there are still imprints of St. Thomas’ feet on the rocks in the caves. However, one of the most interesting legends about this place has to do with a tiny spring located a little away from the cave that apparently never dries, and was created by St. Thomas himself!",
+                "This small temple located along Chennai’s famous Pallavan Salai is as popular as it is intriguing. The idol of Lord Muneeswaran kept within the temple was first brought to Chennai in 1919 and placed under a neem tree by the locals. According to popular lore, a British officer raised objections to the idol being kept there and met with an accident the very same day! Ever since, the locals have believed that praying to the deity assures safety on the road, thus giving it the nickname ‘Bodyguard’. Even today, locals make it a point to conduct a pooja, or prayer offering, at the temple every time they buy a new vehicle. As a result, the shrine always has dozens of vehicles waiting in line to be blessed"
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.11461032834!2d79.92879842584142!3d13.048043813742437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1608012527142!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Mariana Beach",
+                    "detail": "Situated in the city of Chennai in Tamil Nadu, Marina Beach is a natural urban beach along the Bay of Bengal. The beach is stretched out to a distance of 13 kilometres making it the longest natural urban beach in the country, second largest in the world and also the most crowded beach in India with almost 30,000 visitors a day. With a white sandy shore that looks as though extending to infinity, the landscape of Marina Beach is a mesmerising and serene sight to behold. The beach has a primarily sandy terrain and is dotted with plenty of merry-go-rounds and shops selling souvenirs. You could take a walk along the Marina beach with your near and dear ones or even all alone and enjoy the cool evening sea breeze along with a hot plate of crispy sundal and murukku. Watching the sun crawl upwards into the sky or even disappear into the ocean from the beach, is an awe-striking and enchanting experience.",
+                    "images": [
+                        "images/Chennai/places/mb/1.jpg",
+                        "images/Chennai/places/mb/2.webp",
+                        "images/Chennai/places/mb/3.webp",
+                        "images/Chennai/places/mb/4.webp",
+                        "images/Chennai/places/mb/5.webp",
+                        "images/Chennai/places/mb/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608140005731!6m8!1m7!1sCAoSLEFGMVFpcE91ZGhLTEprQndnTkRZVmFkLTcxeTJ0dVNDbFhOYUxUVmQtZXI2!2m2!1d13.04734384095915!2d80.2808402851224!3f115.4968941743942!4f9.816495620547101!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Arignar Anna Zoological Park",
+                    "detail": "One of the most popular picnic spots in Vandalur, the Arignar Zoological Park is an amazing place to discover the flora and fauna of the region.  A favourite weekend spot with both children and adults alike, the Arignar Zoo is situated at a distance of 32 kilometres from Chennai city. It is the largest zoo of its kind in South East Asia and is sprawled over an area of 1260 acres. In addition to having an extensive collection of endemic and exotic animals, visitors can experience the wild first hand with a trip to safari parks where lions and deer can be easily spotted. Housing as many as 138 different species of organisms, this destination is every nature lover's paradise. Arinagar Anna Zoological Park is home to a variety of animals such as Himalayan brown bear, lion, tiger, elephant and Indian civit cat.",
+                    "images": [
+                        "images/Chennai/places/aazp/1.jpg",
+                        "images/Chennai/places/aazp/2.png",
+                        "images/Chennai/places/aazp/3.webp",
+                        "images/Chennai/places/aazp/4.webp",
+                        "images/Chennai/places/aazp/5.jpg",
+                        "images/Chennai/places/aazp/6.webp"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122458240!6m8!1m7!1sCAoSK0FGMVFpcFBCbDZJZEg3WWc4Z2MtRGROR2NsV1lnM2tNamg4UjJTWUpsbUk.!2m2!1d12.8775853!2d80.0879834!3f60.365679721414615!4f36.63432481399694!5f0.4000000000000002"
+                },
+                {
+                    "id": 2,
+                    "name": "Marundeeswarar Temple",
+                    "detail": "The magnificent Marundeeswarar Temple, in Tiruvanmiyur, near Chennai has the temple deity Shiva in the form of Marundeeswar or Aushadeeswarar, the God of Medicines. A fine specimen of Dravidian architecture, this temple is a must visit for anyone visiting Chennai or nearby cities. Glorified in the 7th-8th century by Nayanars (Saivite Saints), Tirugnana Sambandar, and Appar, the temple was expanded by the Chola Kingdom in the 11th century. Moreover, given the name, Marundeeswarar Temple has been a place of worship especially for people with diseases and those facing various problems with their health. The prasadam here is a mixture of sacred ash, water, and milk which is believed to cure any ailments. One must visit the temple to encounter the miraculous power it is said to have.",
+                    "images": [
+                        "images/Chennai/places/mt/1.jpg",
+                        "images/Chennai/places/mt/2.jpg",
+                        "images/Chennai/places/mt/3.png",
+                        "images/Chennai/places/mt/4.jpg",
+                        "images/Chennai/places/mt/5.jpg",
+                        "images/Chennai/places/mt/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122524638!6m8!1m7!1sCAoSLEFGMVFpcE9IZmxNOWk1NmxhbjQ1Mk95dENEak5ta3hHQTk1aGRxSkxHWDMx!2m2!1d12.9848721!2d80.26058689999999!3f160!4f20!5f0.7820865974627469"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "city": "Goa",
+            "images": [
+                "images/Goa/1.jpg",
+                "images/Goa/2.jpg",
+                "images/Goa/3.jpg",
+                "images/Goa/4.jpg",
+                "images/Goa/5.jpg"
+            ],
+            "description": [
+                "Goa has many wonderful beaches, but a safe bet would be the Sinquerim-Baga stretch of beach, with just the right combination of solitude and company. Hold hands, walk on the sparkling sands and gently dip your feet in the warm waves, while the starry skies keep you company. Do stop by for a drink or two at one of the shacks. If you are adventurous types, begin the stroll at the Baga end, walk the 9km (5.6 mi.) stretch and finish off at sunrise, for a well-deserved breakfast at the five-star Vivanta by Taj hotel.",
+                "Woo your sweetheart by taking him or her to one of the most romantic restaurants in Goa—the O’Coqueiro Restaurant, which literally means ‘coconut tree’ in Portuguese. The restaurant is a perfect setting for two—a charming Portuguese ancestral bungalow set amidst lush foliage is sure to stir the romance in your soul. The restaurant serves delicious Goan cuisine and a renowned music band plays a medley of light-hearted music on Friday.",
+                "Embark on an enthralling one-hour trek from Chorla Ghat to the pinnacle of the Vagheri Hills and let the gorgeous terrain intoxicate you with its exotic wild flowers, butterflies and birds. Spice up your romantic itinerary with an ocean trek from Kochra-Shriramwadi to Neuti Beach. Plunge into the waters together from the 20-foot-high rock (6 meters), have a leisurely lunch and then go see the historic Neuti Fort before sunset. Looking for a place to propose? Sonsogor is one of the highest peaks and virgin territory at that. The stunning view of the natural surroundings is the perfect setting to pop the question."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984967.3120715419!2d73.45042909225566!3d15.3478345041566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1608012305273!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "Basilica of Bom Jesus",
+                    "detail": "The Basilica of Bom Jesus Church located in Goa is one of a kind in India and is known for its exemplary baroque architecture. Built in 1594 and consecrated in 1605, the building of this church coincides with the beginning of Christianity in India. The church is located in Old Goa in Bainguinim about 10 km away from Panjim. The oldest church in Goa, it holds the remains of St. Francis Xavier, a special friend of St. Ignatius Loyola with whom he founded the Society of Jesus (Jesuits). Even after 400 years, the remains are in good condition and are taken out once every decade. A site with rich cultural and religious significance, the Basilica of Bom Jesus has been declared a World Heritage Site by UNESCO. Literally translating to 'Holy Jesus', this is the only church in Old Goa that is not been plastered on the outside. The facade of the church has triangular roofing which is delicately carved with the initials 'IHS', which is an abbreviation for Jesuit emblem meaning 'Jesus, Saviour of Men'.",
+                    "images": [
+                        "images/Goa/places/bbj/1.jpg",
+                        "images/Goa/places/bbj/2.webp",
+                        "images/Goa/places/bbj/3.jpg",
+                        "images/Goa/places/bbj/4.jpg",
+                        "images/Goa/places/bbj/5.jpg",
+                        "images/Goa/places/bbj/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122030111!6m8!1m7!1sCAoSLEFGMVFpcE1Xd1lnbzhkUVpfSTdRNXNDTWg0QnQxTlZXS3ZoMW5McHRmbzlk!2m2!1d15.5008938!2d73.9116272!3f271.32131464694487!4f-8.709586020515076!5f0.7820865974627469"
+                },
+                {
+                    "id": 1,
+                    "name": "Fort Aguada",
+                    "detail": "Fort Aguada is a 17th-century Portuguese fort looking out at the confluence of Mandovi River and the Arabian Sea. The crumbling ramparts of the fort stand on the Sinquerim Beach, approximately 18 km from Panjim. The highlight of the fort is a lone four-storey lighthouse (which is one-of-its-kind in Asia )and a stunning view of the sunset. Built-in 1612 as a protection from Dutch and Marathas, Fort Aguada was the most prized and crucial fort for the Portuguese and covers the entire peninsula at the southwestern tip of Bardez. The fort is so named after the Portuguese Word for water i.e. 'Agua' and used to be a replenishing source of freshwater for sailors. In fact, it has the capacity to hold 2,376,000 gallons of water and was one of the biggest freshwater reservoirs of Asia.",
+                    "images": [
+                        "images/Goa/places/fa/1.jpg",
+                        "images/Goa/places/fa/2.webp",
+                        "images/Goa/places/fa/3.webp",
+                        "images/Goa/places/fa/4.webp",
+                        "images/Goa/places/fa/5.webp",
+                        "images/Goa/places/fa/6.webp"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122224400!6m8!1m7!1sCAoSLEFGMVFpcE5RTGprTWlmZHkyaUdDTHdmaWhVUWQtakRQNGt2ZmZXVkdDNExl!2m2!1d15.4924526!2d73.7736413!3f251.40364263782445!4f-3.807423476329859!5f0.4000000000000002"
+                },
+                {
+                    "id": 2,
+                    "name": "Anjuna Beach",
+                    "detail": "Located near Panjim at a distance of 21 km, Anjuna Beach is among the most popular beaches in North Goa, stretching almost 2km. A hippie paradise of sorts it is characterized by its rocky outcrops. From family outings to adrenaline-filled adventures, Anjuna Beach is famed for its golden coastline, nightclubs, beach shacks, watersports, full-moon parties and flea markets. Come and rock the night way at Curlies, or dance to some techno at Cafe Lilliput. During the day you can sample some delicious culinary goodness at Burger Factory, Baba Au Rhum, or Basilico. Known as the jewel of Ozran, Anjuna became a favourite haunt for the hippies in the swingin' 60s and still retains the same vibe to this day. You are sure to meet an eclectic bunch of tourists from all over the world when you are here! Anjuna's charm makes it a favourite among both long-stayers and first-timers.",
+                    "images": [
+                        "images/Goa/places/ab/1.jpg",
+                        "images/Goa/places/ab/2.jpg",
+                        "images/Goa/places/ab/3.webp",
+                        "images/Goa/places/ab/4.jpg",
+                        "images/Goa/places/ab/5.jpg",
+                        "images/Goa/places/ab/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122328314!6m8!1m7!1sCAoSLEFGMVFpcE4xd0xfMW1heW02QXU5LVJMbUtnNFNJQm4zd1pkLVFtd0ZRMzk4!2m2!1d15.5854007!2d73.7369962!3f195.95648128474568!4f16.130228705504294!5f0.7820865974627469"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "city": "Pune",
+            "images": [
+                "images/Pune/1.jpg",
+                "images/Pune/2.jpg",
+                "images/Pune/3.jpeg",
+                "images/Pune/4.jpg",
+                "images/Pune/5.jpg"
+            ],
+            "description": [
+                "When you’re visiting a place as a tourist, you’d like to go around and explore as best as possible. But when you encounter warm, humid, uncomfortable weather all the time, it ruins your mood and drains your energy. That’s what Mumbai is like—humid and sweaty. Pune, on the other hand, is cool and pleasant at any time of the year, with occasional drizzles and a pleasant breeze bringing alive the romantic in everybody. Pune’s weather beats Mumbai’s any day.",
+                "Mumbai is a concrete jungle with highrises dotting the skyline. When there are too many people at one place, it is bound to get crowded, stifling, and dirty. In comparison, Pune has managed to save its greenery and open spaces. The city is cleaner and greener, and much less crowded than Mumbai. Being a tourist in Pune is always a pleasant experience.",
+                "Pune is home to cuisine from all over the world. From high-end restaurants to street food and Parsi cuisine to Italian food, there’s so much variety. Whether you are a non-vegetarian, vegetarian, or vegan, you will find a wide range of food available to your delight. Eating out is cheaper than in Mumbai, which makes sampling the different kinds of food much more enjoyable."
+            ],
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.14199614953!2d73.72288117003453!3d18.524564859944654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1608012017051!5m2!1sen!2sin",
+            "places": [
+                {
+                    "id": 0,
+                    "name": "National War Museum",
+                    "detail": "The National War Memorial Southern Command is a war memorial in Pune Cantonment, India, dedicated to post-Independence war martyrs. This is the only war memorial in South Asia which has been erected by citizens' contributions. The memorial was unveiled and dedicated to the nation on 15 August 1998. A MiG-23BN, used in the Kargil War, is on display at the memorial. A replica of the now decommissioned frigate INS Trishul, which served in the Liberation of Goa and the Indo-Pakistani War of 1971, is also on display. MiG-23BN aircraft at National War Memorial Pune. Recently, the Pune Cantonment Board sanctioned a sum of ₹32,00,000 ($47,550) for renovation of the memorial. The work included laying a new lawn, landscaping and laying pathways for visitors.",
+                    "images": [
+                        "images/Pune/places/nwm/1.jpg",
+                        "images/Pune/places/nwm/2.jpg",
+                        "images/Pune/places/nwm/3.jpg",
+                        "images/Pune/places/nwm/4.jpg",
+                        "images/Pune/places/nwm/5.jpg",
+                        "images/Pune/places/nwm/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608123320920!6m8!1m7!1sCAoSK0FGMVFpcE5lRHZJR3dwdFdJYlM5aGltZzhOUE5wQXowUkl5Sk1wN1VlVHM.!2m2!1d18.5237717!2d73.8882338!3f189.78502966056573!4f-2.44922735418578!5f0.4000000000000002"
+                },
+                {
+                    "id": 1,
+                    "name": "Shaniwar Wada",
+                    "detail": "Shaniwarwada, once the seat of the Peshwa governance in Pune is a 286-year-old mansion and is one of the finest examples of architecture in the city. It is now one of the most popular tourist destinations in Maharashtra. This grand mansion was built by the Peshwa Bajirao I himself as the residence of the Peshwas. Although the Wada currently covers an area of 625 acres, in its heyday it covered almost the entire area of the city itself. The place never fails to amaze the visitor with its various forts and fountain, and the majestic statue of Baji Rao I that greets the visitor at the entrance of the palace. Although most of the Wada was destroyed by an unexplained fire in 1828, what remains of it is equally thrilling and majestic. The Shaniwar Wada, although ridden with tales of treachery and deceit, is one of the last standing testimonies to the grandeur, valour, and the just rule of the Peshwas. The entire old part of the city of Pune is laid out in a chaotic yet ironically, orderly fashion all around this historical structure.",
+                    "images": [
+                        "images/Pune/places/sw/1.jpg",
+                        "images/Pune/places/sw/2.jpg",
+                        "images/Pune/places/sw/3.jpg",
+                        "images/Pune/places/sw/4.jpg",
+                        "images/Pune/places/sw/5.jpg",
+                        "images/Pune/places/sw/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608122980745!6m8!1m7!1sCAoSLEFGMVFpcE11TlItM3hyLWh4a1g0ZEZhbVlVTDhQZFoza3o4Q3hnejF2VTFn!2m2!1d18.5194589!2d73.8553183!3f74.66431234838264!4f14.51454246363582!5f0.7820865974627469"
+                },
+                {
+                    "id": 2,
+                    "name": "Aga Khan Palace",
+                    "detail": "The mighty edifice of Aga Khan Palace is situated in Pune and was built by Sultan Muhammed Shah Aga Khan III in the year 1892. It is one of the most important landmarks in Indian history and has been instrumental in many defining moments of India's independence. It was once the site where Mahatma Gandhi, his wife Kasturba Gandhi, as well as Sarojini Naidu and Mahadev Desai were held prisoners. Aga Khan Palace is well known both for its architectural excellence as well as its historical significance. Spread over a vast land of 19 acres, the palace is now the headquarters of the Gandhi National Memorial society. Here, making khadi is still one of the prime activities. The Sultan built the palace to support the poor in the neighbouring areas who were hit by a famine. In the memory of Kasturba Gandhi and Mahadev Desai, architect Charles Corea had their memorials built in the premises of the palace. The palace houses a museum which holds a rich collection of pictures. There are also other items like the personal belongings of Gandhi. The Palace also has the ashes of Mahatma Gandhi buried in its ground. In 2003, the monument was declared to be of national importance.",
+                    "images": [
+                        "images/Pune/places/akp/1.jpg",
+                        "images/Pune/places/akp/2.jpg",
+                        "images/Pune/places/akp/3.webp",
+                        "images/Pune/places/akp/4.jpg",
+                        "images/Pune/places/akp/5.webp",
+                        "images/Pune/places/akp/6.jpg"
+                    ],
+                    "streetview": "https://www.google.com/maps/embed?pb=!4v1608123066618!6m8!1m7!1sCAoSLEFGMVFpcE8yVGpKbWVMbTByQ1JieVlNZ3dURzJoUlpPUEhLWGFQenQ2bE8w!2m2!1d18.5520784!2d73.90181319999999!3f7.0919323!4f16.435270000000003!5f0.7820865974627469"
+                }
+            ]
+        }
+    ]
 }

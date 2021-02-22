@@ -71,7 +71,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
 
 <header class='jumbotron'>
     <div class="box">
-        <h1>Shoround</h1>
+        <h1>ExplorAlly</h1>
             <form action="" class="form-inline" method="GET">
             <div class=" form-group mx-sm-3 mb-2">
                 <select name="city" id="city" class="form-control" placeholder="Choose a city">
@@ -178,54 +178,7 @@ $get_frnd_num = $frnd_obj->get_all_bookings($_SESSION['user_id'], false);
          
         </div>
     </div>
-
-<footer id='contactus' class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./userprofile.php">Home</a></li>
-                        <li><a href="./aboutus.php">About Us</a></li>
-                        <li><a href="./discover.php">Discover</a></li>
-                        <li><a href="./userbookings.php">Bookings</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                <a href='randomgooglemaplink' target='blank'>
-								<h1>
-									<i class='fa fa-map-marker f-lag'></i>
-								</h1>
-							</a>
-                    <address>
-		              121, Shoround<br>
-		              Mumbai<br>
-		              India<br>
-		              <i class="fa fa-phone f-lag"></i> : +91 90043770XX<br>
-		              <i class="fa fa-fax fa-lag"></i> : +91 98205702XX<br>
-		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:shoround@gmail.com">shoround@gmail.com</a>
-		           </address>
-                </div>
-                <div class="col-12 offset-1 col-sm-4 align-self-center">
-                    <div class="text-center icon-bar">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter f-lag"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube f-lag"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope f-lag"></i></a>
-                    </div>
-                </div>
-           </div>
-           <div class="row justify-content-center">
-                <div class="col-auto">
-                    <h6 class='copyright'>© Copyright 2020 Shoround</h5>
-                </div>
-           </div>
-        </div>
-    </footer>
-
+<?phpinclude('footer.php')?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

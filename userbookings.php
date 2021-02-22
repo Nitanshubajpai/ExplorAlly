@@ -30,7 +30,7 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="bookings.css">
+    <link rel="stylesheet" href="userbookings.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -85,12 +85,12 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
                     <div class="row d-flex justify-content-center">
                  <div class="col md-10 mt-5 pt-5">
                    <div class="row z-depth-3">
-                        <div class="col-sm-4 image ">
+                        <div class="col-sm-4 guideimage ">
                                 <div class="card-block text-center">
                                 <img src="profile_images/'.$row[0]->guide_image.'" alt="Profile image" width="300px" height="auto">
                                 </div>
                             </div>
-                            <div class="col-sm-8 details">
+                            <div class="col-sm-8 guidedetails">
                                 <h3 class="mt-3 text-center font-weight-bold">INFORMATION</h3>
                                 <hr class="badge-primary mt-0 wd-25">
                                     <div class="row">
@@ -105,7 +105,7 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
                                                 <br/>
                                             </div>
                                             <div class="col-sm-6">
-                                                <p class="font-weight-bold">CONTACT</p>
+                                                <p class="font-weight-bold">CONATCT</p>
                                                 <h6 class="text-muted">'.$row[0]->contact.'</h6>
                                                 <br/>
                                             </div>
@@ -160,7 +160,7 @@ $get_all_friends = $frnd_obj->get_all_bookings($_SESSION['user_id'], true);
 		              India<br>
 		              <i class="fa fa-phone f-lag"></i> : +91 90043770XX<br>
 		              <i class="fa fa-fax fa-lag"></i> : +91 98205702XX<br>
-		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:shoround@gmail.com">shoround@gmail.com</a>
+		              <i class="fa fa-envelope fa-lag"></i> : <a href="mailto:explorally@gmail.com">explorally@gmail.com</a>
 		           </address>
                 </div>
                 <div class="col-12 offset-1 col-sm-4 align-self-center">
